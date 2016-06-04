@@ -1,0 +1,268 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* Toggle Styles */
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+#wrapper.toggled {
+  padding-left: 250px; }
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #EEEEEE;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px; }
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px; }
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px; }
+
+/* Sidebar Styles */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px; }
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: black; }
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #009688;
+  background: rgba(255, 255, 255, 0.2); }
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none; }
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px; }
+
+.sidebar-nav > .sidebar-brand a {
+  color: black; }
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #009688;
+  background: none; }
+
+@media (min-width: 0px) {
+  #wrapper {
+    padding-left: 250px; }
+  #wrapper.toggled {
+    padding-left: 0; }
+  #sidebar-wrapper {
+    width: 250px; }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0; }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative; }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0; } }
+
+body {
+  padding-top: 275px;
+  padding-bottom: 70px;
+  font-family: "Fjalla One", sans-serif; }
+
+#aboutHeart {
+  display: inline; }
+
+.heartCharacters {
+  font-family: sans-serif; }
+
+.essayImages {
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
+hr {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: black 1px solid; }
+
+#sidebar-brand-hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: black 1px solid; }
+
+#essayTitle {
+  margin-bottom: 50px; }
+
+a {
+  color: black; }
+
+a:hover {
+  color: #009688; }
+
+a:focus {
+  color: #009688; }
+
+#typedAnimation {
+  display: inline-block;
+  color: black;
+  text-align: left; }
+
+#directoryContainer {
+  background-color: #EEEEEE;
+  margin-top: 10px; }
+
+#windUpDurb {
+  color: black; }
+
+#directory {
+  margin-top: 20px; }
+
+p {
+  font-family: 'Playfair Display', serif;
+  text-indent: 50px;
+  text-align: left;
+  line-height: 1.5; }
+
+.terminal-window {
+  text-align: left;
+  width: 600px;
+  height: 150px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative; }
+
+.terminal-window header {
+  background: #E0E8F0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px; }
+
+.terminal-window header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px; }
+
+.terminal-window header .button.green {
+  background: #3BB662; }
+
+.terminal-window header .button.yellow {
+  background: #E5C30F; }
+
+.terminal-window header .button.red {
+  background: #E75448; }
+
+.terminal-window section.terminal {
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
+  background: #30353A;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  bottom: 0;
+  overflow: auto; }
+
+.terminal-window section.terminal .typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.terminal-data {
+  display: none; }
+
+.terminal-window .gray {
+  color: gray; }
+
+.terminal-window .green {
+  color: green; }
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

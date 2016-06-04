@@ -1,0 +1,77 @@
+
+body {
+  padding-top: 275px;
+  padding-bottom: 70px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+#aboutHeart {
+  display: inline;
+}
+
+.heartCharacters {
+  font-family: sans-serif;
+}
+
+.essayImages {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: black 1px solid;
+}
+
+#sidebar-brand-hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: black 1px solid;
+
+}
+
+#essayTitle {
+  margin-bottom: 50px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #009688;
+}
+
+a:focus {
+  color: #009688;
+}
+
+#typedAnimation {
+  display: inline-block;
+  color: black;
+  text-align: left;
+}
+
+#directoryContainer {
+  background-color: #EEEEEE;
+  margin-top: 10px;
+}
+
+#windUpDurb {
+  color: black;
+}
+
+#directory {
+  margin-top: 20px;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+  text-indent: 50px;
+  text-align: left;
+  line-height: 1.5;
+}
+
