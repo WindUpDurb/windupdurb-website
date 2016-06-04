@@ -2,12 +2,6 @@
 
 let mongoose = require("mongoose");
 
-/*const MONGOURL = process.env.MONGODB_URI || "mongodb://localhost/windupdurbWebsite";
-
-mongoose.connect(MONGOURL, function (error) {
-    console.log(error || `Connected to MongoDB at ${MONGOURL}`);
-});*/
-
 
 let essaySchema = new mongoose.Schema({
     title: { type: String },
@@ -21,7 +15,7 @@ let essaySchema = new mongoose.Schema({
 
 let Essay = mongoose.model("Essay", essaySchema);
 
-/*let firstEssay = {
+let firstEssay = {
 
     title: "Var versus Let: A Discussion on Being a Noob",
     textBody: [
@@ -159,6 +153,6 @@ let Essay = mongoose.model("Essay", essaySchema);
 Essay.create(firstEssay, function (error, savedDocument) {
     if (error) return console.log(error);
     console.log("saved doc: ", savedDocument);
-});*/
+});
 
 module.exports = Essay;
