@@ -9,7 +9,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/",
             views: {
                 "body": {
-                    templateUrl: "/html/home.html"
+                    templateUrl: "/html/home.html",
+                    controller: "mainController"
                 }
             }
         })
@@ -17,7 +18,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/contact",
             views: {
                 "body": {
-                    controller : "contactController",
+                    controller : "mainController",
                     templateUrl : "/html/contact.html"
                 }
             }
@@ -26,7 +27,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/writing",
             views: {
                 "body": {
-                    controller: "writingController",
+                    controller: "mainController",
                     templateUrl : "/html/writing.directory.html"
                 }
             }
@@ -37,7 +38,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             views: {
                 "writtenPiece" : {
                     templateUrl: "/html/writing.writtenPiece.html",
-                    controller: "writingController"
+                    controller: "mainController"
                 }
             }
         })
@@ -45,7 +46,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/about",
             views: {
                 "body": {
-                    controller: "aboutController",
+                    controller: "mainController",
                     templateUrl: "/html/about.html"
                 }
             }
@@ -170,46 +171,36 @@ function runScripts(data, pos) {
 
 var app = angular.module("personalSite");
 
-app.controller("mainController", function ($scope) {
-   console.log("Main Controller");
-});
+app.controller("mainController", function ($scope, EssayServices, $state) {
 
-app.controller("contactController", function ($scope) {
-   console.log("Contact Controller");
-   $scope.currentDirectory = "Contact"
-});
+    if ($state.current.name === "writing" || "writtenPiece") {
 
-app.controller("aboutController", function () {
-   console.log("About Controller");
-});
+        EssayServices.getAllEssays()
+            .then(function (response) {
+                $scope.essayList = response.data;
+                console.log($scope.essayList);
 
-app.controller("writingController", function (EssayServices, $state, $scope) {
-
-   EssayServices.getAllEssays()
-       .then(function (response) {
-          $scope.essayList = response.data;
-          console.log($scope.essayList);
-
-       })
-       .catch(function (error) {
-          console.log("Error: ", error);
-       });
+            })
+            .catch(function (error) {
+                console.log("Error: ", error);
+            });
 
 
-   if ($state.params.pieceId) {
-      let toFind = { url: $state.params.pieceId };
-      EssayServices.getSingleEssay(toFind)
-          .then(function (response) {
-            $scope.currentPiece = response.data[0];
-          })
-          .catch(function (error) {
-             console.log("Error: ", error);
-          });
-   }
-
-
+        if ($state.params.pieceId) {
+            let toFind = { url: $state.params.pieceId };
+            EssayServices.getSingleEssay(toFind)
+                .then(function (response) {
+                    $scope.currentPiece = response.data[0];
+                })
+                .catch(function (error) {
+                    console.log("Error: ", error);
+                });
+        }
+    }
+    //end writing states
 
 });
+
 "use strict";
 
 var app = angular.module("personalSite");

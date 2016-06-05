@@ -134,6 +134,9 @@ a:hover {
 a:focus {
   color: #009688; }
 
+.highlight {
+  color: #009688; }
+
 #typedAnimation {
   display: inline-block;
   color: black;

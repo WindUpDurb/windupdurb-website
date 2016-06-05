@@ -4,7 +4,7 @@
     <div id="sidebar-wrapper" class="text-center">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                Writings
+                Writing
             </li>
             <li ng-repeat="essay in essayList">
                 <!--create an array for hrefs to replaces spaces with %20 or whatever it is-->
@@ -20,19 +20,25 @@
         <div class="container-fluid">
 
 
-            <div ui-view="writtenPiece"></div>
+            <div ui-view="writtenPiece">
 
 
-            <div class="container-fluid text-center" style="margin-top: 50px">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <img style="display: inline-block" src="images/windup-key.png">
-                        <div style="display: inline-block">
-                            <h1>Wind-UpDurb</h1>
+                <div class="container-fluid text-center" style="margin-top: 50px">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img style="display: inline-block" src="images/windup-key.png">
+                            <div style="display: inline-block">
+                                <h1>Wind-UpDurb</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
+
+
+
 
 
 

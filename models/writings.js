@@ -2,9 +2,9 @@
 
 let mongoose = require("mongoose");
 
-
 let essaySchema = new mongoose.Schema({
-    title: { type: String },
+    title: { type: String, required: true },
+    datePosted: { type: String, required: true },
     //text body will be an array of paragraphs
     textBody: [{
         contentType: String,
@@ -15,9 +15,11 @@ let essaySchema = new mongoose.Schema({
 
 let Essay = mongoose.model("Essay", essaySchema);
 
+/*
 let firstEssay = {
 
     title: "Var versus Let: A Discussion on Being a Noob",
+    datePosted: "June 3, 2016",
     textBody: [
         {
             contentType: "Text",
@@ -153,6 +155,7 @@ let firstEssay = {
 Essay.create(firstEssay, function (error, savedDocument) {
     if (error) return console.log(error);
     console.log("saved doc: ", savedDocument);
-});
+});*/
+
 
 module.exports = Essay;

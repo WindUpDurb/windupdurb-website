@@ -9,7 +9,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/",
             views: {
                 "body": {
-                    templateUrl: "/html/home.html"
+                    templateUrl: "/html/home.html",
+                    controller: "mainController"
                 }
             }
         })
@@ -17,7 +18,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/contact",
             views: {
                 "body": {
-                    controller : "contactController",
+                    controller : "mainController",
                     templateUrl : "/html/contact.html"
                 }
             }
@@ -26,7 +27,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/writing",
             views: {
                 "body": {
-                    controller: "writingController",
+                    controller: "mainController",
                     templateUrl : "/html/writing.directory.html"
                 }
             }
@@ -37,7 +38,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             views: {
                 "writtenPiece" : {
                     templateUrl: "/html/writing.writtenPiece.html",
-                    controller: "writingController"
+                    controller: "mainController"
                 }
             }
         })
@@ -45,7 +46,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/about",
             views: {
                 "body": {
-                    controller: "aboutController",
+                    controller: "mainController",
                     templateUrl: "/html/about.html"
                 }
             }

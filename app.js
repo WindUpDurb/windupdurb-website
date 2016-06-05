@@ -11,7 +11,8 @@ var path = require("path");
 var pathToStatic = path.join(__dirname, "public");
 
 var mongoose = require("mongoose");
-const MONGOURL = process.env.MONGODB_URI || process.env.MONGODB_AWS || "mongodb://localhost/windupdurbWebsite";
+
+const MONGOURL = process.env.MONGODB_AWS || "mongodb://localhost/windupdurbWebsite";
 
 mongoose.connect(MONGOURL, function (error) {
     console.log(error || `Connected to MongoDB at ${MONGOURL}`);
