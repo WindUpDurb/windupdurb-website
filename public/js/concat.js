@@ -1,8 +1,12 @@
 "use strict";
 
-var app = angular.module("personalSite", ["ui.router"]);
+var app = angular.module("personalSite", ["ui.router", "ngDisqus"]);
 
-app.config(function ($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $disqusProvider) {
+
+    $disqusProvider.setShortname("windupdurb");
+
+    $locationProvider.hashPrefix("!");
 
     $stateProvider
         .state("home", {
@@ -27,7 +31,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/writing",
             views: {
                 "body": {
-                    controller: "mainController",
+                    controller: "essaysController",
                     templateUrl : "/html/writing.directory.html"
                 }
             }
@@ -38,7 +42,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             views: {
                 "writtenPiece" : {
                     templateUrl: "/html/writing.writtenPiece.html",
-                    controller: "mainController"
+                    controller: "essaysController"
                 }
             }
         })
@@ -172,34 +176,41 @@ function runScripts(data, pos) {
 var app = angular.module("personalSite");
 
 app.controller("mainController", function ($scope, EssayServices, $state) {
+    
 
-    if ($state.current.name === "writing" || "writtenPiece") {
+});
 
-        EssayServices.getAllEssays()
+app.controller("essaysController", function ($scope, EssayServices, $state) {
+
+    console.log("Essays");
+    
+    EssayServices.getAllEssays()
+        .then(function (response) {
+            $scope.essayList = response.data;
+            console.log($scope.essayList);
+
+        })
+        .catch(function (error) {
+            console.log("Error: ", error);
+        });
+
+
+    if ($state.params.pieceId) {
+        let toFind = { url: $state.params.pieceId };
+        EssayServices.getSingleEssay(toFind)
             .then(function (response) {
-                $scope.essayList = response.data;
-                console.log($scope.essayList);
+                $scope.currentPiece = response.data[0];
+                $scope.currentUrl = `www.windupdrub.com/#!/writing/${$scope.currentPiece.url}`;
 
             })
             .catch(function (error) {
                 console.log("Error: ", error);
             });
-
-
-        if ($state.params.pieceId) {
-            let toFind = { url: $state.params.pieceId };
-            EssayServices.getSingleEssay(toFind)
-                .then(function (response) {
-                    $scope.currentPiece = response.data[0];
-                })
-                .catch(function (error) {
-                    console.log("Error: ", error);
-                });
-        }
     }
-    //end writing states
 
 });
+
+
 
 "use strict";
 

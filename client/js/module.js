@@ -1,8 +1,12 @@
 "use strict";
 
-var app = angular.module("personalSite", ["ui.router"]);
+var app = angular.module("personalSite", ["ui.router", "ngDisqus"]);
 
-app.config(function ($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $disqusProvider) {
+
+    $disqusProvider.setShortname("windupdurb");
+
+    $locationProvider.hashPrefix("!");
 
     $stateProvider
         .state("home", {
@@ -27,7 +31,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/writing",
             views: {
                 "body": {
-                    controller: "mainController",
+                    controller: "essaysController",
                     templateUrl : "/html/writing.directory.html"
                 }
             }
@@ -38,7 +42,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             views: {
                 "writtenPiece" : {
                     templateUrl: "/html/writing.writtenPiece.html",
-                    controller: "mainController"
+                    controller: "essaysController"
                 }
             }
         })

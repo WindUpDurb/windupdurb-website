@@ -2,7 +2,7 @@
     <h2 id="essayTitle">{{currentPiece.title}}</h2>
     <p><b>{{currentPiece.datePosted}}</b></p>
     <br>
-       <div ng-repeat="paragraph in currentPiece.textBody">
+    <div ng-repeat="paragraph in currentPiece.textBody">
         <img class="essayImages" ng-if="paragraph.contentType === 'Image'" ng-src="images/{{paragraph.content}}.png">
         <p ng-if="paragraph.contentType === 'Text'">{{paragraph.content}}</p>
         <div ng-if="paragraph.contentType === 'Divider'">
@@ -15,4 +15,8 @@
             </div>
         </div>
     </div>
+
+    <div disqus="'currentPiece.url'"></div>
+
+
 </div>
