@@ -23,14 +23,12 @@ app.controller("essaysController", function ($scope, EssayServices, $state, $sce
             console.log("Error: ", error);
         });
 
-
     if ($state.params.pieceId) {
         let toFind = { url: $state.params.pieceId };
         EssayServices.getSingleEssay(toFind)
             .then(function (response) {
                 $scope.currentPiece = response.data[0];
                 $scope.currentUrl = `www.windupdrub.com/#!/writing/${$scope.currentPiece.url}`;
-
             })
             .catch(function (error) {
                 console.log("Error: ", error);
