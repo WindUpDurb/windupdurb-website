@@ -7,14 +7,16 @@ app.controller("mainController", function ($scope, EssayServices, $state) {
 
 });
 
-app.controller("essaysController", function ($scope, EssayServices, $state) {
+app.controller("essaysController", function ($scope, EssayServices, $state, $sce) {
 
     console.log("Essays");
     
     EssayServices.getAllEssays()
         .then(function (response) {
             $scope.essayList = response.data;
-            console.log($scope.essayList);
+            $scope.essayList.sort(function (a, b) {
+                return parseInt(b.essayNumber) - parseInt(a.essayNumber)
+            });
 
         })
         .catch(function (error) {
@@ -33,6 +35,10 @@ app.controller("essaysController", function ($scope, EssayServices, $state) {
             .catch(function (error) {
                 console.log("Error: ", error);
             });
+    }
+    
+    $scope.toTrustedHTML = function (html) {
+        return $sce.trustAsHtml(html);
     }
 
 });
