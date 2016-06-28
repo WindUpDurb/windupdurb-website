@@ -3,7 +3,7 @@
 /*
 
 let firstEssay = {
-    essayNumber: "00",
+    essayNumber: "01",
     title: "Var versus Let: A Discussion on Being a Noob",
     datePosted: "June 3, 2016",
     textBody: [
@@ -149,7 +149,7 @@ let firstEssay = {
 
 let secondEssay = {
 
-    essayNumber: "01",
+    essayNumber: "02",
     title: "Deploying to EC2: A Tutorial--Well, It Is Like Shotgunning Beer",
     datePosted: "June 6, 2016",
     textBody: [
@@ -665,10 +665,216 @@ let secondEssay = {
 
 
 
+/*
+ let thirdEssay = {
+ essayNumber: "03",
+ title: "Have some Class with your Beer: An Introduction to Prototype-Based Inheritance in Javascript",
+ datePosted: "June 16, 2016",
+ textBody: [
+ {
+ contentType: "Text",
+ content: `Javascript is a prototype-oriented language.  In short, objects in Javascript can be created as an instance of another object, and the instanced objects inherit properties and methods  from the prototype object. If trying to understand the concepts of prototype and instance from within the context of Javascript is proving to be a little bit difficult—because I know I briefly had some difficulty grasping the concepts at first—take a few moments to consider them in another light.  To get a better sense of prototype and instance in Javascript, strip away the context of Javascript and just concentrate on each word and their corresponding definitions outside of the language. The word prototype denotes a model in which something can be patterned from. An antagonist stealing the prototype for a laser beam, for example, is a familiar science fiction trope. The laser beam prototype serves as a model in which the antagonist can create more laser beams to advance his or her world domination goals.  An instance, on the other, can broadly be thought of as an example of something. In relation to prototype, an instance is an example of the prototype—the additional laser beams the antagonist aims to build and potentially upgrade.`
+ },
+ {
+ contentType: "Text",
+ content: `Lend your attention for another minute to the following example that slowly creeps towards Javascript relevance. The intangible concept that is Beer—not what we drink, but the ideal of Beer—can be thought of as, for the sake of simplicity, the prototype in which every beer we have ever consumed is extended from. Again, for the sake of simplicity and without veering too much into a philosophical discussion, all of those Bud Lights and Keystone Ices you have actually consumed can be thought of as instances of the prototype Beer ideal. Take a gander at the Javascript down below as an illustration to this example.`
+ },
+ {
+ contentType: "Image",
+ content: `02-00-images`
+
+ },
+ {
+ contentType: "Text",
+ content: `What has been constructed in ECMAScript 5 fashion is a prototype for the Beer class. As you can see, I defined the class name, which is Beer, the two properties each instance of the Beer class must have, which are the name and alcoholic properties, and an instance method that each instance of the Beer class will inherently possess, which is the shouldIDrink method.`
+ },
+ {
+ contentType: "Text",
+ content: `With the prototype defined, I can now create instances of the Beer class:`
+ },
+ {
+ contentType: "Image",
+ content: `02-01-images`
+
+ },
+ {
+ contentType: "Text",
+ content: `Up above, I have created three new instances of the Beer class—for a small buzz, of course. Each instance also has access to the shouldIDrink method:`
+ },
+ {
+ contentType: "Image",
+ content: `02-02-images`
+ },
+ {
+ contentType: "Text",
+ content: `Now, creating classes via this prototype syntax has been available in Javascript.  The introduction of the class syntax in ECMAScript 6, though, pretty much accomplishes the same thing as what I did using the prototype syntax above, but it does so in a more pleasant syntax. The class syntax in ECMAScript 6 is simply syntactical sugar, which can be considered revisions to the language for no other substantial purpose than to make writing code a bit more sweeter for the developer.`
+ },
+ {
+ contentType: "Text",
+ content: `Now, let us scoop on some of that sweet class syntax:`
+ },
+ {
+ contentType: "Image",
+ content: `02-03-images`
+ },
+ {
+ contentType: "Text",
+ content: `The above example illustrates how to define a class in ECMAScript 6 using the class declaration.  Note that the class syntax does look a little less complicated and much clearer than the first syntax that was introduced. The second way to define a class is by using the class expression syntax:`
+ },
+ {
+ contentType: "Image",
+ content: `02-04-images`
+ },
+ {
+ contentType: "Text",
+ content: `Now, maybe we would like to add properties and methods to the class  object, but we do not want them to be passed down in each instance of the class. We can add static properties and static methods to a class object via the static keyword:`
+ },
+ {
+ contentType: "Image",
+ content: `02-05-images`
+ },
+ {
+ contentType: "Text",
+ content: `The previous illustrations show how the class syntax can be used to create classes in ECMAScript 6, but as I briefly mentioned earlier, the functionality and features really are not all that different than what existed in the language prior to ECMAScript 6. The prototype-based inheritance has not changed, which, according to my understanding, all boils down to a system in Javascript that is based on the construct of the object. Nearly everything in Javascript is an object, and each object has at least another relationship with a parent object—its prototype—or with null, which is the final link in the prototype chain.`
+ },
+ {
+ contentType: "Text",
+ content: `It is through the intrinsic behavior of prototype-based inheritance in Javascript that a subclass can be created, which can otherwise be thought of as a class that is a child of another class—its prototype class. This can be accomplished using the extends keyword in ECMAScript 6, which can be used in both class declarations and class expressions:`
+ },
+ {
+ contentType: "Image",
+ content: `02-06-images`
+ },
+ {
+ contentType: "Text",
+ content: `The SixPack class in the example above is a subclass of the Beer class. As an extension of Beer, each instance of the SixPack class is created with the properties—name and alcoholic—it  inherits from Beer, and it as well inherits the shouldIDrink method from Beer. The super keyword, for one, is used to call functions on the parent of a class using object notation: super.functionOnTheParent(). Using the super keyword in the constructor, as it is illustrated in the example above, can all be used to access the properties of the parent class so that they can be inherited by the the instances of the child of the class.`
+ },
+ {
+ contentType: "Text",
+ content: `As it might be noted, the SixPack class is not simply just inheriting the properties and methods from the Beer class out of sheer convenience. Rather, there is an actual association between the two classes that make them appropriate prototype and child classes. Keep this in mind when creating subclasses, so as to avoid creating subclasses all willy-nilly.`
+ },{
+ contentType: "Text",
+ content: `And now, after this brief introduction on the prototype-based inheritance in Javascript, I part ways with you. May your coding ventures be accompanied by bounties of beer. Cheers. `
+ }
+ ],
+ url: "class-with-your-beer-intro-to-prototype-based-inheritance"
+ };
+ */
 
 
 
+/////////////////////////////////End of Essay 3
 
+
+/*
+
+ let fourthEssay = {
+ essayNumber: "04",
+ title: "Just Give Me a Beer, Please: An Introduction to Big O Notation",
+ datePosted: "June 27, 2016",
+ textBody: [
+ {
+ contentType: "Text",
+ content: `Big O, from my understanding, is a mathematical notation that, when applied to computer science, is effective at analyzing the efficiency of an algorithm. Specifically, big O analyzes the efficiency of an algorithm based on how it scales in reference to the size of the dataset, or input, that is fed to the algorithm. What is being measured by big O is the time complexity of the algorithm—or, in other words, the time it takes for an algorithm to complete. And generally, the amount of time for an algorithm to complete is based on the number of operations the algorithm needs to perform. So to reiterate, big O can be understood as a notation that represents the time it takes for an algorithm to complete based on the amount of operations it is required to perform. `
+ },
+ {
+ contentType: "Text",
+ content: `Okay. That was a big of jargon. Let's let that sink in for a little.`
+
+ },
+ {
+ contentType: "Text",
+ content: `In the meantime, how about I take a quick break. It has been awhile since I enjoyed a beer, and I want one—any beer. I am not picky right now; I could even drink a Shocktop. So I head on over to the local liquor store. I wave to Sam behind the counter, and proceed to the fridges in the back. Since at this point in time I just want a beer, any beer, I am not going to waste my time searching for a particular one. Instead, I decide on getting literally the first beer I see. Now, this rather thoughtless method of deciding which beer to get can actually be expressed in big O notation. The process in which I decide on the first beer that I see can be described in big O notation as O(1). In my current give-me-any-beer-right-now state-of-mind, my thought process of what beer I should get—the algorithm behind my decision—can be analyzed as executing in constant time: no matter the size of the list or array—no matter how wide the selection of beers is at Sam's Liquor—the application of the algorithm that is my give-me-any-beer-right-now state-of-mind will execute at a constant time and return me a beer, which will be the first one that I see. I will not even bother to look at other beers; I simply will get the first beer that I see. `
+
+ },
+ {
+ contentType: "Image",
+ content: `03-00-images`
+
+ },
+ {
+ contentType: "Text",
+ content: `As it can be gleaned from the code illustration above and just to reiterate, the process in which I choose a beer at Sam's Liquor in my give-me-any-beer-right-now state-of-mind runs in constant time relative to the input, which is the selection of beer at Sam's.`
+
+ },
+ {
+ contentType: "Text",
+ content: `In most situations, I would be happy with this thought process. It is immediate, I get a beer in my hand as soon as possible, and, hey, who am I to complain? A beloved beer is a beloved beer. I will drink anything if it is offered to me, but in this situation, I am purchasing my own beer, so I think I should be a bit more selective with my choice.`
+
+ },
+ {
+ contentType: "Text",
+ content: `So, I rewind the narrative. I have already entered Sam's and have just waved to him. My mind is reeling as I proceed to the refrigerators in the back. It is a common occurrence: I have no idea which beer to get. So, I decide to look at every beer in all of the fridges. That will help me decide; it usually does. This process of examining each beer in Sam's Liquor can also be described in big O notation as well. In fact, it is of O(n), where n is the size of the input—which in this scenario is the entire selection of beer at Sam's Liquor. My examination process runs in linear time, so the amount of time it takes me to examine the entire array of beers is relative to the size of the list. If there are 100 beers at Sam's, and I give each beer a considerate and thoughtful minute to mull it over, it would take me 100 minutes to complete the examination process. If there were 50 different beers, it would take me 50 minutes. If there were 10 different beers, it would take me 10 minutes, and so on.`
+
+ },
+ {
+ contentType: "Image",
+ content: `03-01-images`
+
+ },
+ {
+ contentType: "Text",
+ content: `The key thing to remember is that the time complexity in an O(n) algorithm will grow linearly, and it will also grow in proportion to the size of the input.`
+
+ },
+ {
+ contentType: "Text",
+ content: `Let us now include some more relevant application of these previous examples. Big O notation  in computer science, as I introduced earlier, can be used to represent the time complexity of an algorithm, which can be understood as the amount of time, based on the amount of operations, it takes for an algorithm to complete—and completion is designated as the moment in which a search algorithm, for example, finds the search term in a list or array, or when a search algorithm completes its search and it yields no matches. To add some jargon to the pile, the terms worst case, best case, and average case are used to express the time complexity of the application of an algorithm in these various scenarios. It might be self-explanatory what each case refers to, but to get a little context, the big O notation for the best case an algorithm, for example, would refer to the time complexity of the algorithm in ideal conditions. In a linear search, where each item in the list is looked at in turn, the best case would be represented as O(1), and it would occur when the search term is the very first item in the list.`
+
+ },
+ {
+ contentType: "Text",
+ content: `Now, let us rewind the narrative again. This time, I know what beer I want: I want a six pack of Calm Before The Storm, which is brewed by Ballast Point. I just waved to Sam, and am proceeding to the fridges that store the beer. I know where the Calm Before The Storm six pack is. It is right in the middle where—and before I finish that thought, I realize that the entire selection of beers have been rearranged. I yell to Sam, “Hey, what gives? Why'd you rearrange everything?” Sam is tending to a customer, so he does not mind me. Maybe an impatient version of me grumbles, and I then proceed to search for the beer using a good ol' fashioned linear search, where I start at one end and examine each item in the array—each beer in Sam's—one by one and in order until I either find the search term—the search beer—or if I reach the end and do not find the search term.`
+
+ },
+ {
+ contentType: "Image",
+ content: `03-02-images`
+
+ },
+ {
+ contentType: "Text",
+ content: `Using a linear search, the best-case of the algorithm would be in O(1), and that would occur if the beer is the very first one that I examined—and found! The worst-case, on the other hand, would occur if Calm Before The Storm is out of stock or if it is at the very bottom of the last fridge: in both cases, I would have to search through every item in the array of beers, and the time complexity for this scenario can be expressed in big O notation with O(n).`
+
+ },
+ {
+ contentType: "Text",
+ content: `But hold up. Let's rewind a bit again. There should be a less tedious way for me to search for the beer.`
+
+ },
+ {
+ contentType: "Text",
+ content: `Now, I just yelled at Sam in reference to the beer selection being rearranged. He yells back at me this time: “I put it in alphabetical order. By Brewery.  No big deal.” I agree with him and tell him it should make my searches easier. Instead of doing a linear search on the entire selection, since it would be time-consuming and pointless to go one by one, I instead divide the entire wall of fridges in half and ignore the latter half, the ones containing beers from breweries that begin with a letter from N to Z. Immediately, the list of beers gets cut in half. I then do the same operation with the first half of the list, which contains beers from breweries with a beginning letter between A and M: the letters F through M get discarded , and now I only have A through E. I make subsequent divisions in half until I am left with beers brewed by Ballast Point and finally I find Calm Before The Storm.`
+
+ },
+ {
+ contentType: "Image",
+ content: `03-03-images`
+
+ },
+ {
+ contentType: "Text",
+ content: `This example of a binary search works by dividing a list and  comparing the halfway point with the search term. The irrelevant half of the list subsequently gets discarded. The same operation is then performed again on the remaining list until either the search term is found or when all possible searches have been exhausted, indicating that the search term is not in the list.`
+
+ },
+ {
+ contentType: "Text",
+ content: `In a binary search, the average case can be expressed as O(log n). Based on my own research and understanding, O(log n) basically means that time increases linearly as  n—or, the input—grows exponentially. For example, if it took me 1 minute to search through a list containing 10 beers using an O(log n) algorithm like a binary search, it would take me 2 minutes to search through a list containing 100 beers and 3 minutes for a list of 1000 beers. `
+
+ },
+ {
+ contentType: "Text",
+ content: `This time, I grab the six pack of Calm Before The Storm, pay, and leave Sam's Liquor. I will put big O notation to rest for now. Beer calls. Cheers. Until next time.`
+
+ }
+ ],
+ url: "beer-me-please-an-intro-to-big-o"
+ };
+
+ */
+
+
+/////////////////////////////////////////// End of Essay 4
 
 
 

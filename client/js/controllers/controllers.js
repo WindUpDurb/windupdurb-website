@@ -13,11 +13,9 @@ app.controller("essaysController", function ($scope, EssayServices, $state, $sce
     
     EssayServices.getAllEssays()
         .then(function (response) {
-            $scope.essayList = response.data;
-            $scope.essayList.sort(function (a, b) {
+            $scope.essayList = response.data.sort(function (a, b) {
                 return parseInt(b.essayNumber) - parseInt(a.essayNumber)
             });
-
         })
         .catch(function (error) {
             console.log("Error: ", error);
@@ -34,7 +32,6 @@ app.controller("essaysController", function ($scope, EssayServices, $state, $sce
                 console.log("Error: ", error);
             });
     }
-    
     $scope.toTrustedHTML = function (html) {
         return $sce.trustAsHtml(html);
     }

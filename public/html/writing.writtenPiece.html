@@ -6,7 +6,7 @@
         <div ng-if="paragraph.contentType === 'Image'">
             <img class="essayImages center-block img-thumbnail img-responsive"  ng-src="images/{{paragraph.content}}.png">
         </div>
-        <p ng-bind-html="toTrustedHTML(paragraph.content)" ng-if="paragraph.contentType === 'Text'"></p>
+        <p class="essayText" ng-bind-html="toTrustedHTML(paragraph.content)" ng-if="paragraph.contentType === 'Text'"></p>
         <div ng-if="paragraph.contentType === 'Divider'">
             <div class="row">
                 <div class="col-sm-5 col-sm-offset-2">
