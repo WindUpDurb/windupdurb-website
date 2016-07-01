@@ -1,0 +1,108 @@
+.writingblock {
+  margin-top: 35px;
+  margin-bottom: 35px; }
+
+.githubMark {
+  position: relative; }
+
+.footerDivider {
+  height: 1px;
+  background-color: #333333; }
+
+.blockDivider {
+  height: 1px;
+  background-color: #333333; }
+
+.winduphomeheader {
+  margin-top: 72px; }
+
+.homeheader {
+  border-bottom: 1px solid #000;
+  text-align: center; }
+
+.homemeditationsheading {
+  margin-bottom: 98px;
+  color: rgba(51, 51, 51, 0.77);
+  font-weight: 400; }
+
+.footercontainer {
+  margin-top: 11px; }
+
+.winduphomeheader {
+  margin-top: 72px; }
+
+.homeheader {
+  border-bottom: 1px solid #000;
+  text-align: center; }
+
+.homemeditationsheading {
+  margin-bottom: 98px;
+  color: rgba(51, 51, 51, 0.77);
+  font-weight: 400; }
+
+.footercontainer {
+  margin-top: 11px; }
+
+.thumbnailImage {
+  width: 32px;
+  height: 32px; }
+
+body {
+  background-color: white;
+  padding-bottom: 70px;
+  font-family: "Fjalla One", sans-serif; }
+
+.navbarInnerContainer {
+  font-size: 1.45em; }
+
+.navbarMine {
+  height: 5%; }
+
+.essayText {
+  font-size: 1.25em; }
+
+#aboutHeart {
+  display: inline; }
+
+.heartCharacters {
+  font-family: sans-serif; }
+
+.essayImages {
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
+#essayTitle {
+  margin-bottom: 50px; }
+
+a {
+  color: black; }
+
+a:hover {
+  color: #009688; }
+
+a:focus {
+  color: #009688; }
+
+.highlight {
+  color: #009688; }
+
+#typedAnimation {
+  display: inline-block;
+  color: black;
+  text-align: left; }
+
+#directoryContainer {
+  background-color: #EEEEEE;
+  margin-top: 10px; }
+
+#windUpDurb {
+  color: black; }
+
+#directory {
+  margin-top: 20px; }
+
+p {
+  font-family: 'Playfair Display', serif;
+  text-indent: 50px;
+  text-align: left;
+  line-height: 1.5; }

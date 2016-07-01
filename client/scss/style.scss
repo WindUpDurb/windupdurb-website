@@ -1,8 +1,93 @@
+.writingblock {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.githubMark {
+  position: relative;
+
+}
+
+.footerDivider {
+  height: 1px;
+  background-color: #333333;
+
+}
+
+.blockDivider {
+  height: 1px;
+  background-color: #333333;
+
+}
+.writingblockinnercontainer {
+  //border-top: 1px solid rgba(0, 0, 0, .57);
+}
+
+.winduphomeheader {
+  margin-top: 72px;
+}
+
+.homeheader {
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+.homemeditationsheading {
+  margin-bottom: 98px;
+  color: rgba(51, 51, 51, .77);
+  font-weight: 400;
+}
+
+.footerinnercontainer {
+  //border-top: 1px solid #000;
+}
+
+.footercontainer {
+  margin-top: 11px;
+}.winduphomeheader {
+   margin-top: 72px;
+ }
+
+.homeheader {
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+.homemeditationsheading {
+  margin-bottom: 98px;
+  color: rgba(51, 51, 51, .77);
+  font-weight: 400;
+}
+
+.footerinnercontainer {
+  //border-top: 1px solid #000;
+}
+
+.footercontainer {
+  margin-top: 11px;
+}
+
+
+//////////////Webflow above
+
+.thumbnailImage {
+  width: 32px;
+  height: 32px;
+}
 
 body {
-  padding-top: 275px;
+  //padding-top: 275px;
+  background-color: white;
   padding-bottom: 70px;
   font-family: "Fjalla One", sans-serif;
+}
+
+.navbarInnerContainer {
+  font-size: 1.45em;
+}
+
+.navbarMine {
+  height: 5%;
 }
 
 .essayText {
@@ -22,20 +107,8 @@ body {
   margin-bottom: 10px;
 }
 
-hr {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: black 1px solid;
-}
 
-#sidebar-brand-hr {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: black 1px solid;
 
-}
 
 #essayTitle {
   margin-bottom: 50px;

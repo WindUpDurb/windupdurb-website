@@ -14,33 +14,14 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $dis
             views: {
                 "body": {
                     templateUrl: "/html/home.html",
-                    controller: "mainController"
-                }
-            }
-        })
-        .state("contact", {
-            url: "/contact",
-            views: {
-                "body": {
-                    controller : "mainController",
-                    templateUrl : "/html/contact.html"
-                }
-            }
-        })
-        .state("writing", {
-            url: "/writing",
-            views: {
-                "body": {
-                    controller: "essaysController",
-                    templateUrl : "/html/writing.directory.html"
+                    controller: "essaysController"
                 }
             }
         })
         .state("writtenPiece", {
-            parent: "writing",
-            url: "/:pieceId",
+            url: "/writing/:pieceId",
             views: {
-                "writtenPiece" : {
+                "body" : {
                     templateUrl: "/html/writing.writtenPiece.html",
                     controller: "essaysController"
                 }
@@ -50,7 +31,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $dis
             url: "/about",
             views: {
                 "body": {
-                    controller: "mainController",
+                    controller: "essaysController",
                     templateUrl: "/html/about.html"
                 }
             }
@@ -176,7 +157,7 @@ function runScripts(data, pos) {
 var app = angular.module("personalSite");
 
 app.controller("mainController", function ($scope, EssayServices, $state) {
-    
+
 
 });
 

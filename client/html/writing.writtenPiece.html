@@ -1,24 +1,31 @@
-<div style="margin-top: 50px" class="text-center col-sm-10">
-    <h2 id="essayTitle">{{currentPiece.title}}</h2>
-    <p><b>{{currentPiece.datePosted}}</b></p>
-    <br>
-    <div ng-repeat="paragraph in currentPiece.textBody">
-        <div ng-if="paragraph.contentType === 'Image'">
-            <img class="essayImages center-block img-thumbnail img-responsive"  ng-src="images/{{paragraph.content}}.png">
-        </div>
-        <p class="essayText" ng-bind-html="toTrustedHTML(paragraph.content)" ng-if="paragraph.contentType === 'Text'"></p>
-        <div ng-if="paragraph.contentType === 'Divider'">
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-2">
-                    <p>
-                        <i class="fa fa-beer" aria-hidden="true"></i><i class="fa fa-beer" aria-hidden="true"></i><i class="fa fa-beer" aria-hidden="true"></i>
-                    </p>
+
+<div style="margin-top: 100px" class="w-section">
+    <div class="w-container">
+
+
+        <div style="margin-top: 50px" class="text-center">
+            <h2 id="essayTitle">{{currentPiece.title}}</h2>
+            <p><b>{{currentPiece.datePosted}}</b></p>
+            <br>
+            <div ng-repeat="paragraph in currentPiece.textBody">
+                <div ng-if="paragraph.contentType === 'Image'">
+                    <img class="essayImages center-block img-thumbnail img-responsive"  ng-src="images/{{paragraph.content}}.png">
+                </div>
+                <p class="essayText" ng-bind-html="toTrustedHTML(paragraph.content)" ng-if="paragraph.contentType === 'Text'"></p>
+                <div ng-if="paragraph.contentType === 'Divider'">
+                    <div class="row">
+                        <div class="col-sm-5 col-sm-offset-2">
+                            <p>
+                                <i class="fa fa-beer" aria-hidden="true"></i><i class="fa fa-beer" aria-hidden="true"></i><i class="fa fa-beer" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div disqus=" currentPiece.url "></div>
         </div>
+
+
+
     </div>
-
-    <div disqus=" currentPiece.url "></div>
-
-
 </div>
