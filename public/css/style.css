@@ -81,13 +81,13 @@ a {
   color: black; }
 
 a:hover {
-  color: #009688; }
+  color: #FF5722; }
 
 a:focus {
-  color: #009688; }
+  color: #FF5722; }
 
 .highlight {
-  color: #009688; }
+  color: #FF5722; }
 
 #typedAnimation {
   display: inline-block;
