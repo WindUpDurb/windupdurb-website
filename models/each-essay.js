@@ -1,10 +1,11 @@
 "use strict";
 
-/*
+
 
 let firstEssay = {
     essayNumber: "01",
     title: "Var versus Let: A Discussion on Being a Noob",
+    introduction: "Let's take it from the beginning with variable declarations.",
     datePosted: "June 3, 2016",
     textBody: [
         {
@@ -137,7 +138,6 @@ let firstEssay = {
     ],
     url: "var-versus-let-a-discussion-on-being-a-noob"
 };
-*/
 
 
 
@@ -145,11 +145,9 @@ let firstEssay = {
 
 
 
-/*
-
 let secondEssay = {
-
     essayNumber: "02",
+    introduction: "A step-by-step walk-through to deploying a MEAN stack web application to Amazon's EC2.",
     title: "Deploying to EC2: A Tutorial--Well, It Is Like Shotgunning Beer",
     datePosted: "June 6, 2016",
     textBody: [
@@ -655,7 +653,7 @@ let secondEssay = {
     ],
     url: "deploying-to-ec2-and-shotgunning-beer"
 };
-*/
+
 
 
 
@@ -665,10 +663,11 @@ let secondEssay = {
 
 
 
-/*
+
  let thirdEssay = {
  essayNumber: "03",
  title: "Have some Class with your Beer: An Introduction to Prototype-Based Inheritance in Javascript",
+ introduction: "One part ECMAScript 6 class syntax and 2 parts beer.",
  datePosted: "June 16, 2016",
  textBody: [
  {
@@ -759,18 +758,17 @@ let secondEssay = {
  ],
  url: "class-with-your-beer-intro-to-prototype-based-inheritance"
  };
- */
+
 
 
 
 /////////////////////////////////End of Essay 3
 
 
-/*
-
  let fourthEssay = {
  essayNumber: "04",
  title: "Just Give Me a Beer, Please: An Introduction to Big O Notation",
+ introduction:  "It's Big O and beer. What's not to love?",
  datePosted: "June 27, 2016",
  textBody: [
  {
@@ -871,7 +869,7 @@ let secondEssay = {
  url: "beer-me-please-an-intro-to-big-o"
  };
 
- */
+
 
 
 /////////////////////////////////////////// End of Essay 4
@@ -881,3 +879,4 @@ let secondEssay = {
 
 
 
+module.exports = [firstEssay, secondEssay, thirdEssay, fourthEssay];
