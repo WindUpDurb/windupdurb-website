@@ -3,8 +3,7 @@
 var app = angular.module("personalSite");
 
 app.controller("mainController", function ($scope, EssayServices, $state) {
-
-
+    
 });
 
 app.controller("essaysController", function ($scope, EssayServices, $state, $sce) {

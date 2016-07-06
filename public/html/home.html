@@ -8,14 +8,14 @@
 </div>
 
 
-<div ng-repeat="essay in essayList" class="w-section writingblock">
-    <div class="w-container writingblockinnercontainer">
+<div ng-repeat="essay in essayList" class="container writingblock">
+    <div class="writingblockinnercontainer">
         <div style="margin-top: 45px;" class="row">
-            <div class="col-sm-2">
+            <div class="col-xs-6 col-sm-2 col-sm-offset-2">
                 <img src="/images/myphoto.jpg" class="img-rounded thumbnailImage">
                 <span class="greyText">David Urbina</span>
             </div>
-            <div class="col-sm-offset-10">{{essay.datePosted}}</div>
+            <div class="col-xs-offset-7 col-sm-offset-10">{{essay.datePosted}}</div>
         </div>
         <div class="row">
             <div class="col-sm-8 col-sm-offset-3">
@@ -23,18 +23,18 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-10 col-sm-offset-3">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-3">
                 <p>{{essay.introduction}}</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3 col-sm-offset-5">
+            <div class="col-xs-6 col-xs-offset-4 col-sm-3 col-sm-offset-5">
                 <button type="button" ui-sref="writtenPiece({pieceId: '{{essay.url}}' })" style="margin-bottom: 10px; background-color: #FF5722" class="btn btn-primary btn-raised">Read</button>
             </div>
 
         </div>
         <div style="margin-top: 50px; margin-bottom: 25px"  class="row">
-            <div class="col-sm-6 col-sm-offset-3 blockDivider"></div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 blockDivider"></div>
         </div>
     </div>
 </div>
