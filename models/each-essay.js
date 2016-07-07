@@ -200,7 +200,7 @@ let secondEssay = {
         },
         {
             contentType: "Text",
-            content: `This tutorial will be using the MEAN stack image powered by Bitnami. There are a plethora of other images on the AWS marketplace, so you can explore it and choose one that is more to your liking. But this tutorial will be using the Bitnami MEAN stack image, and it can be found <b> <a href='http://aws.amazon.com/marketplace/pp/B00GXYE87S/ref=srh_res_product_title?ie=UTF8&sr=0-3&qid=1435737629090' > here </a> </b>.`
+            content: `This tutorial will be using the MEAN stack image powered by Bitnami. There are a plethora of other images on the AWS marketplace, so you can explore it and choose one that is more to your liking. But this tutorial will be using the Bitnami MEAN stack image, and it can be found <b> <a href='http://aws.amazon.com/marketplace/pp/B00GXYE87S/ref=srh_res_product_title?ie=UTF8&sr=0-3&qid=1435737629090' target="_blank"> here </a> </b>.`
 
         },
         {
@@ -505,7 +505,7 @@ let secondEssay = {
         },
         {
             contentType: "Text",
-            content: `Before leaving the SSH shell, though, you might want to re-direct port 80, which is running the Bitnami MEAN Stack welcome screen,  to port 3000 where the web application is running. The purpose of this is so that you do not have to append port 3000 to the end of the URL. I spent a considerable amount of time searching how I could achieve this before I stumbled across <b> <a href='http://stackoverflow.com/questions/16573668/best-practices-when-running-node-js-with-port-80-ubuntu-linode'> this </a> </b> Stack Overflow post.`
+            content: `Before leaving the SSH shell, though, you might want to re-direct port 80, which is running the Bitnami MEAN Stack welcome screen,  to port 3000 where the web application is running. The purpose of this is so that you do not have to append port 3000 to the end of the URL. I spent a considerable amount of time searching how I could achieve this before I stumbled across <b> <a href='http://stackoverflow.com/questions/16573668/best-practices-when-running-node-js-with-port-80-ubuntu-linode' target="_blank"> this </a> </b> Stack Overflow post.`
 
         },
         {
