@@ -169,7 +169,7 @@ let secondEssay = {
         },
         {
             contentType: "Text",
-            content: `But a foreword first. This tutorial assumes that you have already created an account with Amazon Web Services, have created an IAM user for EC2 in which we will work from, and have created an EC2 key pair that will be used to log in to the EC2 instance via SSH. If you have not, <b> <a href='http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-key-pair' target="_blank"> here </a> </b> is a link to get you up to speed because it is healthy, you know, to get some exposure to the official documentation.`
+            content: `But a foreword first. This tutorial assumes that you have already created an account with Amazon Web Services, have created an IAM user for EC2 in which we will work from, and have created an EC2 key pair that will be used to log in to the EC2 instance via SSH. If you have not, <b> <a class='essayLink' href='http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-key-pair' target="_blank"> here </a> </b> is a link to get you up to speed because it is healthy, you know, to get some exposure to the official documentation.`
         },
         {
             contentType: "Text",
@@ -200,7 +200,7 @@ let secondEssay = {
         },
         {
             contentType: "Text",
-            content: `This tutorial will be using the MEAN stack image powered by Bitnami. There are a plethora of other images on the AWS marketplace, so you can explore it and choose one that is more to your liking. But this tutorial will be using the Bitnami MEAN stack image, and it can be found <b> <a href='http://aws.amazon.com/marketplace/pp/B00GXYE87S/ref=srh_res_product_title?ie=UTF8&sr=0-3&qid=1435737629090' target="_blank"> here </a> </b>.`
+            content: `This tutorial will be using the MEAN stack image powered by Bitnami. There are a plethora of other images on the AWS marketplace, so you can explore it and choose one that is more to your liking. But this tutorial will be using the Bitnami MEAN stack image, and it can be found <b> <a class='essayLink' href='http://aws.amazon.com/marketplace/pp/B00GXYE87S/ref=srh_res_product_title?ie=UTF8&sr=0-3&qid=1435737629090' target="_blank"> here </a> </b>.`
 
         },
         {
@@ -505,7 +505,7 @@ let secondEssay = {
         },
         {
             contentType: "Text",
-            content: `Before leaving the SSH shell, though, you might want to re-direct port 80, which is running the Bitnami MEAN Stack welcome screen,  to port 3000 where the web application is running. The purpose of this is so that you do not have to append port 3000 to the end of the URL. I spent a considerable amount of time searching how I could achieve this before I stumbled across <b> <a href='http://stackoverflow.com/questions/16573668/best-practices-when-running-node-js-with-port-80-ubuntu-linode' target="_blank"> this </a> </b> Stack Overflow post.`
+            content: `Before leaving the SSH shell, though, you might want to re-direct port 80, which is running the Bitnami MEAN Stack welcome screen,  to port 3000 where the web application is running. The purpose of this is so that you do not have to append port 3000 to the end of the URL. I spent a considerable amount of time searching how I could achieve this before I stumbled across <b> <a class='essayLink' href='http://stackoverflow.com/questions/16573668/best-practices-when-running-node-js-with-port-80-ubuntu-linode' target="_blank"> this </a> </b> Stack Overflow post.`
 
         },
         {
@@ -874,9 +874,139 @@ let secondEssay = {
 
 /////////////////////////////////////////// End of Essay 4
 
+let fifthEssay = {
+    essayNumber: "05",
+    title: "This Beer: An Introductory Tour of the this Keyword in Javascript",
+    introduction:  "Why not read about this?",
+    datePosted: "July 10, 2016",
+    textBody: [
+        {
+            contentType: "Text",
+            content: `In my early Javascript days, the this keyword somehow made sense to me. I might not have had been able to describe its behavior, function, or purpose, but I somehow made it work to my expectations, and that was partly because I was understanding the this keyword as I understood the word in the English language: as a pronoun or adjective that refers to something present or within proximity.`
+
+        },
+        {
+            contentType: "Text",
+            content: `“This beer is mine.” `
+
+        },
+        {
+            contentType: "Text",
+            content: `“Is this yours?”`
+
+        },
+        {
+            contentType: "Text",
+            content: `“Yes. I said, 'This beer is mine.'”`
+
+        },
+        {
+            contentType: "Text",
+            content: `The beer in reference is here, present, within reach, and its the beer, presumably among others, that is being actively focused on—the beer in subject of the context of the terse conversation up above. This beer. Not that one.`
+
+        },
+
+        {
+            contentType: "Text",
+            content: `But this wasn't referring to beer during those early Javascript days. Rather, as I typed $(this).css(“background-color”, “blue”) on a Saturday night, the this I had in mind was the specific div I was setting to the color blue whenever it was clicked.`
+
+        },
+
+        {
+            contentType: "Text",
+            content: `That's how I understood the this keyword back then: it was used to reference a context, which often was the element I was targeting in jQuery. And I carried this notion with me for awhile: that the this keyword simply referenced some present context. And that wasn't entirely accurate, nor was it entirely inaccurate.`
+
+        },
+
+        {
+            contentType: "Text",
+            content: `This—or, rather, this—as I've come to understand it, refers to the execution context of a function. More specifically, it refers to the execution context of a function at its call site—the location where a function gets invoked.`
+
+        },
+        {
+            contentType: "Image",
+            content: `04-00-images`
+
+        },
+        {
+            contentType: "Text",
+            content: `To break down the above example, the call site of whatsThis() at line 7 is in the global scope and the function is being invoked via a direct reference and without any sort of bound execution context. In its current circumstances at the execution of whatsThis, the this keyword in the example will default to undefined, and that is what will be logged to the console. That's what the this keyword defaults to when there isn't some sort of implicit or explicit binding, which will be discussed shortly. If strict mode wasn't enabled, though, what would have been logged to the console would be the Global object, since I was running this code in Node. If I had ran it in the browser, it would have defaulted to the Window object. So to sum it up, when at the call site there is just a reference to the invoked function, as it is in the example above, the this keyword will default to undefined in strict mode or the Window  or Global object in the browser and Node respectively. `
+
+        },
+        {
+            contentType: "Image",
+            content: `04-01-images`
+
+        },
+
+        {
+            contentType: "Text",
+            content: `In this example, though, the call site is a bit different. Yes, it is still located on the global scope, but there is now an object property reference at the call site on line 13. The iceCooler object on line 7 has two properties: it has the beer property with the string value of “beer,” and it has a howAboutThis property that is referencing the whatsThis function on line 3. To hark back to the earlier definition of the this keyword—that it refers to the execution context of a function at its call site—the whatsThis function on line 3 is being executed via an object property reference on line 13, and so the execution context of the whatsThis function at that particular call site is the iceCooler object. Which is why the contents of the object, or what is contained in its block scope—the code between the curly braces—will be logged to the console.`
+
+        },
+        {
+            contentType: "Image",
+            content: `04-02-images`
+
+        },
+        {
+            contentType: "Text",
+            content: `It is also why there is no beer when the whatsThis function is again called on line 20: at that specific call site, the whatsThis function is being executed via the object property reference on the fridge object, and there's only milk up in there. `
+
+        },
+        {
+            contentType: "Text",
+            content: `This demonstration is referred to as implicitly binding this. This behavior can be summed up as the following: if there is an object property reference at the call site of a function, the object becomes the execution context of the function and so it becomes the this keyword. This example also demonstrates  how nearly everything in Javascript is actually a reference to an object or a function. Muse on that for awhile. It'll be discussed in a future post.`
+
+        },
+        {
+            contentType: "Text",
+            content: `Besides the implicit and default behavior of the this keyword, there are two nearly identical methods that allow the developer to have more control in setting this.`
+
+        },
+        {
+            contentType: "Image",
+            content: `04-03-images`
+
+        },
+        {
+            contentType: "Text",
+            content: `The call and apply methods, as demonstrated in the example above, are used to explicitly bind the this keyword to an object, and it'll be bound to the first argument of the method, which is referred to as the this argument. Note that call and apply are called on the function. Let's now breakdown the call site.`
+
+        },
+        {
+            contentType: "Text",
+            content: `On line 15, the whatsThis function is being called via a simple, direct reference, and if there was no form of explicit binding, the this of the whatsThis function at line 15 would default to undefined because there is no form of implicit binding in place—that is, the whatsThis function is not being called via an object property reference, as it was demonstrated in earlier examples. But there are explicit bindings. Call and apply are, in a sense, taking over the call site, and they are explicitly setting the execution context at their respective call sites with the this object argument. Which is why when whatsThis is being called at the line 15 and 16 call sites, this is logged as the keg object. The following argument, or arguments, that call and apply can take are the arguments for the function being invoked, which in this case is the “keg” and [“keg”] arguments for the thisIs parameter for the whatsThis function. Here is where the distinction is for call and apply. Both methods have exactly the same behavior in terms of explicitly binding this to the first argument, which, again, is referred to as the this argument, but call allows you to pass in the arguments of the function one by one, and apply allows you to pass in an array with the arguments inside. Besides this behavior with passing in the invoked functions arguments, call and apply are the same in how they explicitly bind this.`
+
+        },
+        {
+            contentType: "Text",
+            content: `Lastly, there's the bind method, which is a tool that binds the this keyword to a function.`
+
+        },
+        {
+            contentType: "Image",
+            content: `04-04-images`
+
+        },
+        {
+            contentType: "Text",
+            content: `The bind method is used to create a new function that has its this bound to whatever object is given to it. On line 12, the variable boundWhatsThis is being declared to the newly bound whatsThis function. When boundWhatsThis is called, as it is on lines 16 and 20, it'll call the whatsThis function with its this set to the keg object. This is an example of hard binding: specifically, the this keyword in the whatsThis function is being hard bound to the keg object, and so its execution context is thereby being forced to that object, which can be accessed via the created boundWhatsThis function.`
+
+        },
+        {
+            contentType: "Text",
+            content: `Here, the introductory tour of the this keyword in Javascript concludes. Cheers.`
+
+        }
+    ],
+    url: "this-beer-an-intro-to-this-in-javascript"
+};
+
+
+//////////////////////////////////////////////////End of Essay 5
 
 
 
 
-
-module.exports = [firstEssay, secondEssay, thirdEssay, fourthEssay];
+module.exports = [firstEssay, secondEssay, thirdEssay, fourthEssay, fifthEssay];

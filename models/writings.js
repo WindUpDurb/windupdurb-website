@@ -21,6 +21,7 @@ let Essay = mongoose.model("Essay", essaySchema);
 
 // console.log("Essays: ", EssayCollection);
 
+
 /*EssayCollection.forEach(function (essay) {
     Essay.create(essay, function (error, savedDocument) {
         if (error) return console.log(error);
@@ -28,7 +29,7 @@ let Essay = mongoose.model("Essay", essaySchema);
     });
 });*/
 
-/*Essay.create(firstEssay, function (error, savedDocument) {
+/*Essay.create(fifthEssay, function (error, savedDocument) {
     if (error) return console.log(error);
     console.log("saved doc: ", savedDocument);
 });*/
