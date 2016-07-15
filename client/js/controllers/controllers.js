@@ -7,14 +7,33 @@ app.controller("mainController", function ($scope, EssayServices, $state) {
 });
 
 app.controller("essaysController", function ($scope, EssayServices, $state, $sce) {
+    let pages;
+    let currentPage = 0;
+    $scope.firstPage = true;
+    $scope.lastPage = false;
+    $scope.leafThroughPages = function (which) {
+        if (which === "next") {
+            currentPage++;
+        } else {
+            currentPage--;
+        }
+        $scope.currentPage = pages[currentPage];
+        if(page === 0) {
+            $scope.firstPage = true;
+            $scope.lastPage = false;
+        } else if (page === pages.length) {
+            $scope.firstPage = false;
+            $scope.lastPage = true;
+        } else {
+            $scope.firstPage = false;
+            $scope.lastPage = false;
+        }
+    };
 
-    console.log("Essays");
-    
     EssayServices.getAllEssays()
         .then(function (response) {
-            $scope.essayList = response.data.sort(function (a, b) {
-                return parseInt(b.essayNumber) - parseInt(a.essayNumber)
-            });
+            pages = EssayServices.paginate(response.data);
+            $scope.currentPage = pages[0];
         })
         .catch(function (error) {
             console.log("Error: ", error);

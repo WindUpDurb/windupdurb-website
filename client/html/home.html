@@ -1,5 +1,5 @@
-<div class="homeHeaderContainer w-section">
-    <div class="homeheader w-container">
+<div class="homeHeaderContainer container-fluid">
+    <div class="homeheader container">
         <img class="winduphomeheader" src="images/windup-key.png">
         <h1 class="windupdurbheading">Wind-UpDurb</h1>
         <h2 class="homemeditationsheading">Meditations on Javascript, Web Development, and Life</h2>
@@ -8,8 +8,18 @@
     </div>
 </div>
 
+<div class="container">
+    <div style="margin-top: 10px;" class="row">
+        <div ng-if="!firstPage" class="pull-left">
+            <button type="button" ng-click="{{leafThroughPages('next')}}" class="btn btn-warning">Newer Posts</button>
+        </div>
+        <div ng-if="!lastPage" class="pull-right">
+            <button class="btn btn-warning">Older Posts</button>
+        </div>
+    </div>
+</div>
 
-<div ng-repeat="essay in essayList" class="container writingblock">
+<div ng-repeat="essay in currentPage" class="container writingblock">
     <div class="writingblockinnercontainer">
         <div style="margin-top: 45px;" class="row">
             <div class="col-xs-6 col-sm-2 col-sm-offset-2">
