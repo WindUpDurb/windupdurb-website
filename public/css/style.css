@@ -55,6 +55,13 @@ body {
   padding-bottom: 70px;
   font-family: "Fjalla One", sans-serif; }
 
+#parallaxContainer {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto; }
+
 .navbarInnerContainer {
   font-size: 1.45em; }
 
@@ -62,7 +69,7 @@ body {
   height: 5%; }
 
 .essayText {
-  font-size: 1.25em; }
+  font-size: 1.35em; }
 
 #aboutHeart {
   display: inline; }
@@ -72,7 +79,15 @@ body {
 
 .essayImages {
   margin-top: 5px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  max-width: 60%; }
+
+.sectionHeaderDiv {
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+.sectionHeader {
+  font-size: 2.32em; }
 
 .essayLink {
   color: #FF5722; }

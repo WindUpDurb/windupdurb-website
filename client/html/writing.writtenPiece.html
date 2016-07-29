@@ -1,8 +1,11 @@
 
-<div style="margin-top: 75px" class="row">
+<div ng-if="!currentPiece.photoHeader" style="margin-top: 75px" class="row">
     <div class="col-xs-5 col-xs-offset-3 col-sm-4 col-sm-offset-5">
         <img src="images/gearsForWriting.png" class="img-responsive">
     </div>
+</div>
+
+<div ng-if="currentPiece.photoHeader" ng-style="{'background-image': 'url(' + currentPiece.photoHeader + ')'}" id="parallaxContainer">
 </div>
 <div style="margin-top: 100px" class="container">
         <div style="margin-top: 50px" class="text-center">
@@ -11,12 +14,15 @@
             <br>
             <div ng-repeat="paragraph in currentPiece.textBody">
                 <div ng-if="paragraph.contentType === 'Image'">
-                    <img class="essayImages center-block img-thumbnail img-responsive"  ng-src="images/{{paragraph.content}}.png">
+                    <img class="essayImages center-block img-thumbnail img-responsive"  ng-src="images/{{paragraph.content}}">
+                </div>
+                <div class="sectionHeaderDiv" ng-if="paragraph.contentType === 'SectionHeader'">
+                    <span class="sectionHeader greyText">{{paragraph.content}}</span>
                 </div>
                 <p class="essayText" ng-bind-html="toTrustedHTML(paragraph.content)" ng-if="paragraph.contentType === 'Text'"></p>
                 <div ng-if="paragraph.contentType === 'Divider'">
                     <div class="row">
-                        <div class="col-sm-5 col-sm-offset-2">
+                        <div class="col-sm-3 col-sm-offset-4">
                             <p>
                                 <i class="fa fa-beer" aria-hidden="true"></i><i class="fa fa-beer" aria-hidden="true"></i><i class="fa fa-beer" aria-hidden="true"></i>
                             </p>
@@ -24,6 +30,6 @@
                     </div>
                 </div>
             </div>
-            <div disqus=" currentPiece.url "></div>
+            <div style="margin-top: 20px" disqus=" currentPiece.url "></div>
         </div>
 </div>

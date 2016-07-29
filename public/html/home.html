@@ -10,16 +10,16 @@
 
 <div class="container">
     <div style="margin-top: 10px;" class="row">
-        <div ng-if="!firstPage" class="pull-left">
-            <button type="button" ng-click="previousPage()" class="btn btn-warning">Newer Posts</button>
+        <div ng-if="olderPosts" class="pull-left">
+            <button type="button" ng-click="toggleOlderPosts(olderPosts)" class="btn btn-warning">Newer Posts</button>
         </div>
-        <div ng-if="!lastPage" class="pull-right">
-            <button ng-click="nextPage()" class="btn btn-warning">Older Posts</button>
+        <div ng-if="!olderPosts" class="pull-right">
+            <button ng-click="toggleOlderPosts(olderPosts)" class="btn btn-warning">Older Posts</button>
         </div>
     </div>
 </div>
 
-<div ng-repeat="essay in currentPage" class="container writingblock">
+<div ng-repeat="essay in currentPages" class="container writingblock">
     <div class="writingblockinnercontainer">
         <div style="margin-top: 45px;" class="row">
             <div class="col-xs-6 col-sm-2 col-sm-offset-2">
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-3">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-3">
                 <p>{{essay.introduction}}</p>
             </div>
         </div>
@@ -42,7 +42,6 @@
             <div class="col-xs-6 col-xs-offset-4 col-sm-3 col-sm-offset-5">
                 <button type="button" ui-sref="writtenPiece({pieceId: '{{essay.url}}' })" style="margin-bottom: 10px; background-color: #FF5722" class="btn btn-primary btn-raised">Read</button>
             </div>
-
         </div>
         <div style="margin-top: 50px; margin-bottom: 25px"  class="row">
             <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 blockDivider"></div>

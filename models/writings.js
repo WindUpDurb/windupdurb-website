@@ -14,7 +14,8 @@ let essaySchema = new mongoose.Schema({
         contentType: String,
         content: String
     }],
-    url: { type: String }
+    url: { type: String },
+    photoHeader: {type: String}
 });
 
 let Essay = mongoose.model("Essay", essaySchema);

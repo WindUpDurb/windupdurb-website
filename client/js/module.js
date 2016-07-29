@@ -40,3 +40,4 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $dis
 
     $urlRouterProvider.otherwise("/");
 });
+

@@ -41,6 +41,8 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $dis
     $urlRouterProvider.otherwise("/");
 });
 
+
+
 //life.js:
 
 /*
@@ -161,42 +163,31 @@ app.controller("mainController", function ($scope, EssayServices, $state) {
 });
 
 app.controller("essaysController", function ($scope, EssayServices, $state, $sce) {
-    let pages;
-    $scope.currentPage = 0;
-    $scope.firstPage = true;
-    $scope.lastPage = false;
-    $scope.nextPage = function () {
-        console.log("Here");
-        console.log($scope.currentPage);
-        $scope.currentPage++;
-    };
-    $scope.previousPage = function() {
-        console.log("Here");
-        $scope.currentPage--;
-    };
-  /*  $scope.nextPage = function () {
-        if (which === "next") {
-            currentPage++;
-        } else {
-            currentPage--;
+    let pages = [];
+
+    const producePages = function () {
+        if ($scope.olderPosts && pages.length) {
+            $scope.currentPages = pages.slice(4);
+        } else if (!$scope.olderPosts && pages.length) {
+            $scope.currentPages = pages.slice(0, 4);
         }
-        $scope.currentPage = pages[currentPage];
-        if(currentPage === 0) {
-            $scope.firstPage = true;
-            $scope.lastPage = false;
-        } else if (currentPage === pages.length) {
-            $scope.firstPage = false;
-            $scope.lastPage = true;
-        } else {
-            $scope.firstPage = false;
-            $scope.lastPage = false;
+    };
+
+    $scope.toggleOlderPosts = function (boolean) {
+        if (boolean) {
+            $scope.olderPosts = false;
+            producePages();
         }
-    };*/
+        if (!boolean) {
+            $scope.olderPosts = true;
+            producePages();
+        }
+    };
 
     EssayServices.getAllEssays()
         .then(function (response) {
-            pages = EssayServices.paginate(response.data);
-            $scope.currentPage = pages[$scope.currentPage];
+            pages = EssayServices.sortPages(response.data);
+            $scope.toggleOlderPosts(true);
         })
         .catch(function (error) {
             console.log("Error: ", error);
@@ -235,23 +226,10 @@ app.service("EssayServices", function ($http) {
         return $http.put("/api/essays/getSingleEssay", essayToFind);
     };
 
-    this.paginate = function (essayList) {
-        let sorted = essayList.sort(function (a, b) {
+    this.sortPages = function (essayList) {
+        return essayList.sort(function (a, b) {
             return parseInt(b.essayNumber) - parseInt(a.essayNumber)
         });
-        let pages = [];
-        let page = [];
-        for (let i = 0; i < sorted.length; i++) {
-            page.push(sorted[i]);
-            if (page.length === 4) {
-                pages.push([...page]);
-                page = [];
-            }
-            if(i === sorted.length - 1) {
-                pages.push([...page]);
-            }
-        }
-        return pages;
     };
     
 });

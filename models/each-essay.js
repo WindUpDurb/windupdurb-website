@@ -33,7 +33,7 @@ let firstEssay = {
         },
         {
             contentType: "Image",
-            content: `00-00-image`
+            content: `00-00-image.png`
 
         },
         {
@@ -42,7 +42,7 @@ let firstEssay = {
         },
         {
             contentType: "Image",
-            content: `00-01-image`
+            content: `00-01-image.png`
 
         },
         {
@@ -51,7 +51,7 @@ let firstEssay = {
         },
         {
             contentType: "Image",
-            content: `00-02-image`
+            content: `00-02-image.png`
 
         },
         {
@@ -64,7 +64,7 @@ let firstEssay = {
         },
         {
             contentType: "Image",
-            content: `00-03-image`
+            content: `00-03-image.png`
 
         },
         {
@@ -78,7 +78,7 @@ let firstEssay = {
         },
         {
             contentType: "Image",
-            content: `00-04-image`
+            content: `00-04-image.png`
         },
         {
             contentType: "Text",
@@ -87,7 +87,7 @@ let firstEssay = {
         },
         {
             contentType: "Image",
-            content: `00-05-image`
+            content: `00-05-image.png`
 
         },
         {
@@ -102,7 +102,7 @@ let firstEssay = {
         },
         {
             contentType: "Image",
-            content: `00-06-image`
+            content: `00-06-image.png`
 
         },
         {
@@ -181,7 +181,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-00-images`
+            content: `01-00-images.png`
 
         },
         {
@@ -190,7 +190,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-01-images`
+            content: `01-01-images.png`
 
         },
         {
@@ -214,7 +214,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-02-images`
+            content: `01-02-images.png`
 
         },
         {
@@ -224,7 +224,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-03-images`
+            content: `01-03-images.png`
 
         },
         {
@@ -239,7 +239,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-32-images`
+            content: `01-32-images.png`
 
         },
         {
@@ -248,7 +248,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-33-images`
+            content: `01-33-images.png`
 
         },
         {
@@ -257,7 +257,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-34-images`
+            content: `01-34-images.png`
 
         },
         {
@@ -271,7 +271,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-04-images`
+            content: `01-04-images.png`
 
         },
         {
@@ -281,7 +281,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-05-images`
+            content: `01-05-images.png`
 
         },
         {
@@ -306,7 +306,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-08-images`
+            content: `01-08-images.png`
 
         },
         {
@@ -321,7 +321,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-06-images`
+            content: `01-06-images.png`
 
         },
         {
@@ -331,7 +331,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-07-images`
+            content: `01-07-images.png`
 
         },
         {
@@ -341,7 +341,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-09-images`
+            content: `01-09-images.png`
 
         },
         {
@@ -364,7 +364,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-10-images`
+            content: `01-10-images.png`
 
         },
         {
@@ -378,7 +378,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-11-images`
+            content: `01-11-images.png`
 
         },
         {
@@ -388,7 +388,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-12-images`
+            content: `01-12-images.png`
 
         },
         {
@@ -402,7 +402,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-13-images`
+            content: `01-13-images.png`
 
         },
         {
@@ -425,7 +425,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-15-images`
+            content: `01-15-images.png`
 
         },
         {
@@ -435,7 +435,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-16-images`
+            content: `01-16-images.png`
 
         },
         {
@@ -445,7 +445,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-17-images`
+            content: `01-17-images.png`
 
         },
         {
@@ -455,7 +455,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-18-images`
+            content: `01-18-images.png`
 
         },
         {
@@ -465,7 +465,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-19-images`
+            content: `01-19-images.png`
 
         },
         {
@@ -475,7 +475,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-20-images`
+            content: `01-20-images.png`
 
         },
         {
@@ -485,7 +485,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-22-images`
+            content: `01-22-images.png`
 
         },
         {
@@ -495,7 +495,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-21-images`
+            content: `01-21-images.png`
 
         },
         {
@@ -543,7 +543,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-25-images`
+            content: `01-25-images.png`
 
         },
         {
@@ -553,7 +553,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-26-images`
+            content: `01-26-images.png`
 
         },
         {
@@ -563,7 +563,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-27-images`
+            content: `01-27-images.png`
 
         },
         {
@@ -573,7 +573,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-28-images`
+            content: `01-28-images.png`
 
         },
         {
@@ -583,7 +583,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-29-images`
+            content: `01-29-images.png`
 
         },
         {
@@ -603,7 +603,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-23-images`
+            content: `01-23-images.png`
 
         },
         {
@@ -613,7 +613,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-24-images`
+            content: `01-24-images.png`
 
         },
         {
@@ -628,7 +628,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-30-images`
+            content: `01-30-images.png`
 
         },
         {
@@ -638,7 +638,7 @@ let secondEssay = {
         },
         {
             contentType: "Image",
-            content: `01-31-images`
+            content: `01-31-images.png`
 
         },
         {
@@ -680,7 +680,7 @@ let secondEssay = {
  },
  {
  contentType: "Image",
- content: `02-00-images`
+ content: `02-00-images.png`
 
  },
  {
@@ -693,7 +693,7 @@ let secondEssay = {
  },
  {
  contentType: "Image",
- content: `02-01-images`
+ content: `02-01-images.png`
 
  },
  {
@@ -702,7 +702,7 @@ let secondEssay = {
  },
  {
  contentType: "Image",
- content: `02-02-images`
+ content: `02-02-images.png`
  },
  {
  contentType: "Text",
@@ -714,7 +714,7 @@ let secondEssay = {
  },
  {
  contentType: "Image",
- content: `02-03-images`
+ content: `02-03-images.png`
  },
  {
  contentType: "Text",
@@ -722,7 +722,7 @@ let secondEssay = {
  },
  {
  contentType: "Image",
- content: `02-04-images`
+ content: `02-04-images.png`
  },
  {
  contentType: "Text",
@@ -730,7 +730,7 @@ let secondEssay = {
  },
  {
  contentType: "Image",
- content: `02-05-images`
+ content: `02-05-images.png`
  },
  {
  contentType: "Text",
@@ -742,7 +742,7 @@ let secondEssay = {
  },
  {
  contentType: "Image",
- content: `02-06-images`
+ content: `02-06-images.png`
  },
  {
  contentType: "Text",
@@ -787,7 +787,7 @@ let secondEssay = {
  },
  {
  contentType: "Image",
- content: `03-00-images`
+ content: `03-00-images.png`
 
  },
  {
@@ -807,7 +807,7 @@ let secondEssay = {
  },
  {
  contentType: "Image",
- content: `03-01-images`
+ content: `03-01-images.png`
 
  },
  {
@@ -827,7 +827,7 @@ let secondEssay = {
  },
  {
  contentType: "Image",
- content: `03-02-images`
+ content: `03-02-images.png`
 
  },
  {
@@ -847,7 +847,7 @@ let secondEssay = {
  },
  {
  contentType: "Image",
- content: `03-03-images`
+ content: `03-03-images.png`
 
  },
  {
@@ -925,7 +925,7 @@ let fifthEssay = {
         },
         {
             contentType: "Image",
-            content: `04-00-images`
+            content: `04-00-images.png`
 
         },
         {
@@ -935,7 +935,7 @@ let fifthEssay = {
         },
         {
             contentType: "Image",
-            content: `04-01-images`
+            content: `04-01-images.png`
 
         },
 
@@ -946,7 +946,7 @@ let fifthEssay = {
         },
         {
             contentType: "Image",
-            content: `04-02-images`
+            content: `04-02-images.png`
 
         },
         {
@@ -966,7 +966,7 @@ let fifthEssay = {
         },
         {
             contentType: "Image",
-            content: `04-03-images`
+            content: `04-03-images.png`
 
         },
         {
@@ -986,7 +986,7 @@ let fifthEssay = {
         },
         {
             contentType: "Image",
-            content: `04-04-images`
+            content: `04-04-images.png`
 
         },
         {
@@ -1016,79 +1016,108 @@ let sixthEssay = {
     textBody: [
         {
             contentType: "Text",
-            content: `Not too long ago I began my foray into React after settling in comfortably with Angular. Although I hadn't mastered Angular, I was pretty comfortable maneuvering my way in an Angular front-end. It was because of that comfort that I itched to seek other technologies. Which wasn't motivated by boredom. Not in the very least. But because I believe it requires new experiences and new point-of-views to really understand a familiar state or perspective: being open-minded and reaching for new experiences push you to confront and challenge yourself and what you know, thereby strengthening who you are and what you know, or exposing it for what it is so that you can amend or rebuild if you have to.`
+            content: `A few weeks ago now I began my foray into React after settling in comfortably with Angular. Although I hadn't mastered Angular, I was pretty comfortable maneuvering my way in an Angular front-end. It was because of that comfort that I itched to seek other technologies. Which wasn't motivated by boredom or dissatisfaction with Angular. Not in the very least. But because I believe it requires new experiences and new point-of-views to really understand a familiar state or perspective: being open-minded and reaching for new experiences push you to confront and challenge yourself and what you know, thereby strengthening who you are and what you know, or exposing it for what it is so that you can amend or rebuild if you have to.`
+        },
+
+        {
+            contentType: "Text",
+            content:`What I realized after converting the front-end in a MEAN stack web application into a React and Redux front-end was that although I was able to maneuver in an Angular front-end, I lacked the knowledge on why and how I should best maneuver. My application-building process prior to that point had been sort of like building a structure in a pitch dark room. I was able to make my way from one end of the room to another where, say, materials were, and I was able to  do so, at first, through trial and error, through initially bumping and hitting other stationary objects or furniture in the room masked by darkness. I was able to construct something in the dark room with the materials, after feeling them, making out the shape and size and estimating the weight of them, and ultimately familiarizing myself with them, all the while still, really, in the dark.  Throughout the process I would maneuver to the materials on one end of the room through my tried path, recognize which of the materials felt right for the task at hand, and construct. Yes, I was able to maneuver and build, but there lacked a degree of insight, awareness, and clear orientation.`
+        },
+
+        {
+            contentType: "Text",
+            content:`Ultimately, I was successful in converting my Angular front-end to a React and Redux front-end. But after I did, I still felt in the dark to the real how's and why's of the project. And when I tried to convey my experiences with the Angular-to-React project, I was in a position of trying to explain how I  accomplished something in the dark: I could make some effort to providing a vague description, but it would lack the depth and understanding of knowing one of the most crucial things: knowing where in the hell I was at. `
         },
         {
             contentType: "Text",
-            content: `What I realized after converting the front-end in a MEAN stack web application into a React front-end was that although I was able to maneuver in an Angular front-end, I lacked the knowledge on why and how I should best maneuver. My application-building process was sort of like building a structure in a pitch dark room. I was able to make my way from one end of the room to another where, say, materials were, and I was able to  do so, at first, through trial and error, through initially bumping and hitting other stationary objects or furniture in the room masked by the darkness. I was able to construct something in the dark room with the materials, after feeling them and making out the shape and size and estimating the weight of them. Throughout the process I would maneuver to the materials on one end of the room through my tried path, recognize which of the materials were of which, um, character, partly because of trial and error and familiarity of repetition, and construct. Yes, I was able to maneuver and construct, but there lacked a degree of insight, awareness, and clear orientation.`
-
-        },
-        {
-            contentType: "Text",
-            content: `Ultimately, I was successful in converting my Angular front-end to a React front-end through persistence. But after I did, I still felt in the dark to the real how's and why's of the project. And when I tried to convey my experiences with the Angular-to-React project, I was in a position of trying to explain how I  accomplished something in the dark: I could make some effort to providing a vague description, but it would lack the depth and understanding of knowing one of the most crucial things: knowing where in the hell I was at.`
-
-        },
-        {
-            contentType: "Text",
-            content: `It is following my Angular-to-React project that I write this post and turn on the light to what I have found to be one of the most important aspects of a software application (software/program): the relationship between user interactions and the way an application updates data in response to the interactions. In Angular's case, it is through two-way data binding. In React, particularly in the Redux architecture, it is through a one-way data flow. These two concepts deal with how an application responds to user interactions with its data, and how to best update so that not only the internal state of the application reflects the user-intended changes, but also the view through an efficient re-rendering.`
-
+            content:`It was following my Angular-to-React project that I began to write this post and turn on the light to what I have found to be a crucial aspect of web development to understand: how an application manages the updating of data and state, particularly through efficient and accurate responses to user interactions. In Angular's case, it is through bidirectional data-binding. In React paired with a Redux architecture, it is through a unidirectional data flow. These two concepts deal with how an application responds to user interactions with application state and data, and how to best update so that not only the internal state of the application reflects the user-intended changes, but also the view through an efficient re-rendering.`
         },
         {
             contentType: "Divider"
         },
         {
+            contentType: "SectionHeader",
+            content: "Model-View-Controller"
+        },
+        {
             contentType: "Text",
-            content: `Before I tackle two-way data-binding and one-way data flow, I found it helpful to understand the Model-View-Controller architectural pattern that Angular's data-binding  is related to and React's data flow is a departure from. The Model-View-Controller (MVC) pattern is an architectural pattern concerned with user interfaces and the relationship between user interaction with the software and, through my interpretation, the relationship between a user and the data in software. Please keep in mind that the next few paragraphs are of my interpretation of the MVC pattern outside of the web development scope, which will lead into its application in web development and the aforementioned topics/technologies.`
+            content:`Before I tackle bidirectional data-binding and unidirectional data flow, I found it helpful to understand the Model-View-Controller architectural pattern that Angular's data-binding  can be considered an extension from and the React-encouraged unidirectional data flow a departure from. Please keep in mind that the next few paragraphs are of my interpretation of the MVC pattern outside of the web development scope, which will lead into its application in web development and the aforementioned topics/technologies. Here's a quick primer on my interpretation of it: the Model-View-Controller (MVC) architectural pattern is concerned with user interfaces and the relationship between user interaction with the software.`
+        },
+        {
+            contentType: "Text",
+            content:`My research led me to discover that the Model-View-Controller pattern originated outside of web application development in desktop graphical user interfaces, and I've traced an early discussion on the pattern to a late 1970's text written by Trygve Reenskaug, which can be found <b> <a class='essayLink' href='http://heim.ifi.uio.no/~trygver/themes/mvc/mvc-index.html' target="_blank"> here </a> </b>. In it Reenskaug writes that the “essential purpose of MVC is to bridge the gap between the human user's mental model and the digital model that exists in the computer.” What can be gleaned from this quote is that the purpose behind the MVC pattern is to facilitate ease of interaction with software. The “human user's mental model” refers to the internalized assumptions that a user has before engaging with software. It is the model he or she forms and that will lead his interaction with the software, and it could prove to be accurate or entirely inaccurate from the actual conceptual model of the software. What should be aimed for, from what I've read, is to design software that best reflects the user's mental model; that'll ultimately create the best user experience.`
+        },
+        {
+            contentType: "Text",
+            content:`The MVC pattern can also be interpreted as a solution to a software design concern of how best to facilitate the intended information acquisition or manipulation of a more or less intangible source: the digital material that is data. Which can be interpreted from the following question, which is posed by Reenskaug <b> <a class='essayLink' href='http://heim.ifi.uio.no/~trygver/2003/javazone-jaoo/MVC_pattern.pdf' target="_blank">here</a></b>: “How can we design a system so that the user sees a reflection of his mental model in the system without any of the details that happen to be of no interest to him.” My interpretation of the quote requires us to consider something. While the user's mental model refers to the assumed steps he will take to interact with the software, I find it important to understand why a user, in the case of web applications, will often interact with software in the first place. It is my belief, and I mention this without any superlatives, that a user interacts with software to interact with data, or information; and it is software, as well as hardware, that facilitates that interaction. So really, the MVC pattern aims to “bridge the gap” between how a user assumes he will interact with data through a user interface, which can be software and hardware, and how that actual interaction is facilitated by the software and hardware. And that best can be achieved, according to my interpretation of the MVC pattern, through a separation of concerns: the controller component accepts as input the user's intended interactions with the data; the model component manages the data in the software and receives commands or directions from the controller on how update or manipulate the data; and the view component receives the outputted data from the model to render and re-render to reflect the user's intended interactions. What stands out to me is that user intended interactions are crucial to understanding and implementing an MVC pattern implementation; the pattern implementation should not only accurately responds to user intentions, but provide an environment that facilitates accepting user-intended interactions. `
+        },
+        {
+            contentType: "Image",
+            content: `05-00-images.png`
 
         },
+        {
+            contentType: "Text",
+            content:`In the context of web development, the MVC pattern can be used to design how an application conveys data and accurately updates how the data is rendered to the user and stored in the model. To extend the Reenskaug quotes, that the MVC pattern bridges the user mental model with the digital model, we can draw a fair conclusion that a normal user of any web application would expect that the application would respond quickly, accurately, and efficiently to his intended interactions with it—which ultimately, I believe, is with the data and application state, which refers to the data available at any given moment at runtime of an application. This can be each task in a To-Do application, clothing on an e-commerce application, posts or photos of friends in a social network application; whatever it is, though, it ultimately is data, or information, that is rendered to a view for the user to acquire and/or interact with. So when taken a bit further, the MVC pattern can be applied in web development as a way to design a system that is able to quickly, accurately, and efficiently respond to a user's interaction with the data and application state. Hence, Angular's use of two-way data-binding.`
+        },
+        {
+            contentType: "SectionHeader",
+            content: "Bidirectional Data-Binding and Angular"
+        },
+        {
+            contentType: "Text",
+            content:`Without entering the debate on whether Angular is an MVC framework or MVVM framework, I'd like analyze how Angular's two-way data-binding targets one of the concerns that the MVC pattern addresses. With Reenskaug in mind, two-way data-binding addresses the likely user expectations of interacting with a responsive web application by binding a more direct relationship between view-rendered data and the data in the model. As I discussed earlier, it is a fair assumption to design a web application around a user mental model that is based on an application responding quickly, efficiently, and accurately to the user's interactions with the state. This translates to expectations of instant updates on the view that reflect user-intended manipulations of the state. Angular achieves this through the bound relationship between the data in the model and the data that is rendered in the view, so that when there is an update to the view on, for example, a digital user interface, such as when a user types in an input field, the updates will be registered directly to the appropriate state. The same, too, applies when there are changes to the model data, such as, for example, from some sort of an API call:  when the response is received and as soon as the state is updated by the controller, the bound relationship between the model and view will cause an instant update in the rendered data in the view. `
+        },
+        {
+            contentType: "Image",
+            content: `05-01-images.JPG`
 
+        },
         {
             contentType: "Text",
-            content: `My research led me to discover that the Model-View-Controller pattern originated outside of web application development in desktop graphical user interfaces, and I've traced an early discussion on the pattern to a late 1970's text written by Trygve Reenskaug, which can be found here (1). In it Reenskaug writes that the “essential purpose of MVC is to bridge the gap between the human user's mental model and the digital model that exists in the computer.” What can be gleaned from this quote is that the purpose behind the MVC pattern is to facilitate ease of interaction with software. The “human user's mental model” refers to the internalized assumptions that a user has before engaging with software. It is the model he or she forms and that will lead his interaction with the software, and it could prove to be accurate or entirely inaccurate from the actual conceptual model of the software. What should be aimed for, from what I've read, is to design software that best reflects the user's mental model; that'll ultimately create the best user experience.`
+            content:`While this direct and instantaneous relationship between the view-rendered data and the model data is effective at providing responsive behavior to user interactions in a web application, there are some performance hindrances to the two-way data-binding design that should be considered. I discovered that performance could potentially drop in an application as it grows and the number of watched variables increase, especially in older browsers. The watched variables are the $scope variables that have been “marked” to be watched, and they are monitored through what is referred to as dirty checking, which is simply the process of checking for changes in the watchers. During a digest cycle, which itself can be simplified to a loop, Angular scans each watcher for any changes since the previous cycle. If even the value of one watched variable is picked up in a cycle, Angular will perform another loop on all of the watched variables to scan for any potential changes that might have occurred. Angular will perform this loop until either all of the watched variables are picked up with no changes, or if the loop reaches 10 cycles. This is how two-way data-binding is effected in Angular. The potential performance problems might not seem like an issue in smaller-scale applications with a more manageable amount of watchers. But as a web application scales up, though, and becomes a beast of beautiful complexity, each cycle could become drastically longer. Since almost any event can trigger a digest cycle, potential performance hindrances can definitely become an issue. `
         },
+        {
+            contentType: "Text",
+            content:`With this consideration in mind, we can acknowledge that as an application grows and becomes more complex, two-way data-binding can lead to performance issues that ultimately affect arguably the most important part of an application: the view. The view is what the user sees and interacts with; it is likely what the user bases the majority of his or her impression on. So when a complex application has a ton of  watchers, the performance hit of having the go through them and potentially go through them again and again will likely hit where the user experience is based on. This will lead to potential unresponsiveness in the view and the user interfaces, which really equates to an experience that doesn't align with the user mental model. So while two-way data-binding in Angular can successfully address in more manageable applications an MVC pattern concern of providing a responsive and accurate experience for the user, Angular coincidentally falters as the project grows in that particular issue it works well with in more manageable projects. `
+        },
+        {
+            contentType: "Text",
+            content:`Another shortcoming of bidirectional data-binding in general, which in hindsight I can now apply to understand some of my previous frustrations with Angular, is the issue of managing shared state between models. Models that hold data and state can and will often be stored on $scope; which itself is an object that holds the watched variables to effect the bidirectional data-binding in Angular. Each new controller in Angular essentially initializes a new $scope object to add to the $scope tree structure that reaches all the way up to $rootScope. There will very likely come a time as your application grows when data or state in one $scope object is needed by another $scope object: essentially,  one model becomes dependent on another model. But as your application continues to grow, that important data stored in one $scope object isn't needed by just another $scope object, but maybe three, or four others. Connecting how the state gets from here to there and there and so on will undoubtedly become a frustrating mess, and before you know it, your application will have matured into one without a real single source of truth, thereby resulting in the likelihood of having an unstable application state. Oh, my. And just yesterday your baby was so manageable.`
+        },
+        {
+            contentType: "SectionHeader",
+            content: "Unidirectional Data Flow with Redux-Paired React"
+        },
+        {
+            contentType: "Text",
+            content:`Come React to address some of the issues of two-way data-binding with its encouragement of a one-way data flow. While React itself is just a view framework for your application, the Flux and Redux architectures are where the unidirectional data flow originate from. The Redux architecture, which I will primarily focus on going forward and will introduce right now, implements a unidirectional data flow by, first, storing all of the application state in one place, the store. Data flows down from the store into a specific type of React component called a container component. Components, by the way, are the building blocks that the views and user interfaces are built with. The container components then trickle down the data appropriately to its children presentation components that need it. When a user interacts with the application,  it will be through a user interface on a component. This will trigger the dispatch of an action, which is essentially an object with at least the property of type. The value for the type property will be a string representing what type of event triggered the dispatch of the action. The action can as well have additional properties that store data that is used to, for example, add or update the application state. The action, along with the current state, will be inputted to all of the reducers, which are pure functions: pure functions produce no side-effects nor are they dependent on some sort of external state, so they will always return the same output given the same input. A reducer will check the type of each action, and if it doesn't match, it will return the the state untouched and proceed to the next reducer; otherwise, if the action type does match, the reducer will do its business with the state and any data attached to the action, and return an updated state. An important thing to understand, though, is that the state that is returned by the reducer isn't a mutation of the state that is inputted to it; a copy of the inputted state is made in the reducer, which is revised upon according to the action, and returned. The store is then updated with the new state, which lastly flows down to the container components and to their appropriate children presentation components, thereby updating the view.`
+        },
+        {
+            contentType: "Image",
+            content: `05-02-images.png`
 
-        {
-            contentType: "Text",
-            content: `The MVC pattern can also be interpreted as a solution to the software design concern of how best to facilitate intended information acquisition or manipulation of a more or less intangible source: the digital material that is data. Which can be interpreted from the following question posed by Reenskaug: “How can we design a system so that the user sees a reflection of his mental model in the system without any of the details that happen to be of no interest to him.” While the user's mental model refers to the assumed steps he will take to interact with the software, I find it important to understand why a user, in the case of web applications, will often interact with software in the first place. It is my belief, and I mention this without any superlatives, that a user interacts with software to interact with data, or information; and it is software, as well as hardware, that facilitates that interaction. So really, the MVC pattern aims to “bridge the gap” between how a user assumes he will interact with data through a user interface, which can be software and hardware, and how that actual interaction is facilitated in the software. And that best can be achieved, according to my interpretation of the MVC pattern, through a separation of concerns: the controller component accepts as input the user's intended actions with the data; the model component manages the data in the software and receives commands or directions from the controller to update the data; and the view component receives the outputted data from the model to render and re-render to reflect the user's intended interactions.`
         },
         {
             contentType: "Text",
-            content: `In the context of web development, the MVC pattern can be used to design how an application responds to a user's interaction with it (be more descriptive). To extend the Reenskaug quotes, that the MVC pattern bridges the user mental model with the digital model, we can draw an assumed/fair conclusion that a normal user of any web application would expect that it would respond quickly, accurately, and efficiently to his intended interactions with the application—which ultimately, I believe, is with the data the application houses/packages. This can be to-do's in a To-Do application, clothing in some online vendor application, posts or photos of friends in a social network application; whatever it is, though, it ultimately is data, or information, that is rendered to a view for the user to acquire and/or interact with. This data that the user views and interacts with will also be referred to as the application state, the data available at any given moment at the runtime of an application, from hereon. So when taken a bit further, the MVC pattern can be applied in web development as a way to design a system that is able to quickly, accurately, and efficiently respond to a user's interaction with the application state. Hence, Angular's use of two-way data-binding.`
+            content:`This Redux data-flow is strictly unidirectional, and being so, it can address some of the shortcomings of the bidirectional data-binding in Angular. While bidirectional data-binding in Angular essentially subscribes to changes on the view and model to update each other accordingly, which can cause potential issues in performance and with state management as the application grows, state updates in Redux are made in one place, which then trickle down to the components that need the updates. This structure assures that the entire state of the application exists at a single source of truth, which is the Redux store. This means that the potential complication of models being dependent on other models for state in Angular are non-existent in a Redux application. In addition, any potential performance hindrances caused by Angular's dirty checking are, as well, non-existent. `
         },
         {
             contentType: "Text",
-            content: `Without entering the debate on whether Angular is an MVC framework or MVVM, I'd like analyze how Angular's two-way data-binding targets one of the concerns that the MVC pattern addresses. With Reenskaug in mind, two-way data-binding addresses the likely user expectations of a responsive web application by binding a more direct relationship between view-rendered data and the data in the model. As I discussed earlier, it is a fair assumption to design a web application around a user mental model that is based on an application responding quickly, efficiently, and accurately to the user's interactions with the state. This translates to expectations of instant updates on the view that reflect user-intended manipulations to the data in the application. Angular achieves this through the bound relationship between the data in the model and the data that is rendered in the view, so that when there is an update to the view on, for example, a digital user interface, such as when a user types in an input field, the updates will be registered directly to the appropriate state. The same, too, applies when there are changes to the model data, such as, for example, from some sort of an API call:  when the response is received and as soon as the state is updated by the controller, the bound relationship between the model and view will cause an instant update in the rendered data in the view. `
+            content:`The store in Redux is also immutable, so this trait paired with the unidirectional data flow makes understanding your application and debugging it simpler than in a bidirectional data-binding application of large scope. As it was mentioned earlier, bidirectional data-binding could lead to a mess of shared state between models; issues could sprout where mutating shared state in one part of the application could lead to unintentional impacts in another part of the application. In Redux, any intention to change the state goes through a reducer, and only the appropriate reducer will output the new state based on the action type. As a result, there is a clear understanding of how data moves through the entire application, and the unidirectional data flow makes it simple to trace where what is happening where so that debugging can quickly isolate where attention needs to be applied. The immutable aspect of the store adds to the ease and clarity because it assures that any updates to the state are ultimately happening in a reducer; Which, again, are pure functions that accept the current state and action, and either outputs untouched state or new, updated state that hasn't been mutated.`
         },
         {
             contentType: "Text",
-            content: `While this direct and instantaneous relationship between the view-rendered data and the model data is effective at providing responsive behavior to user interactions in a web application, there are some performance hindrances to the two-way data-binding design that should be considered. I discovered that performance could potentially drop in an application as it grows and the number of watched variables increase, especially in older browsers. The watched variables are the $scope variables that have been “marked” to be watched, and they are monitored through what is referred to as dirty checking, which is simply the process of checking for changes in the watchers. During a digest cycle, which itself can be simplified to a loop, Angular scans each watcher for any changes since the previous cycle. If even the value of one watched variable is picked up in a cycle, Angular will perform another loop on all of the watched variables to scan for any potential changes that might have occurred since the initial change(s). Angular will perform this loop until either all of the watched variables are picked up with no changes, or if the loop reaches 10 cycles. This is how two-way data-binding is effected in Angular. The potential performance problems might not seem like an issue in smaller-scale applications with a more manageable amount of watchers. But as a web application scales up and becomes a beast of beautiful complexity, each cycle could become drastically longer. Since almost any event can trigger a digest cycle, potential performance hindrances can definitely become an issue.`
+            content:`All o' this unidirectional data flow that is encouraged in React and implemented by Redux translates to quick, accurate, and efficient responses to  user actions and data changes. View updates are calculated and performed as efficiently as possible in React, so what you get with React and Redux is a front-end that scales better, has a clearer and more understandable data flow, and is easier to debug than an Angular front-end with its bidirectional data-binding. React paired with Redux is also, in my opinion, much more enjoyable to write because it could be written in pure Javascript, although I do enjoy writing JSX. React and Redux also take a functional programming approach, which I have loved so far, and will be discussing in coming posts. `
         },
         {
             contentType: "Text",
-            content: `With this consideration in mind, we can acknowledge that as an application grows and becomes more complex, two-way data-binding can lead to performance issues that ultimately affect arguably the most important part of an application: the view. The view is what the user sees and interacts with; it is likely what the user bases the majority of his or her impression on. So when a complex application has a ton of  watchers, the performance hit of having the go through them and potentially go through them again and again will likely hit where the user experience stems from. This will lead to potential unresponsiveness in the view and the user interfaces, which really equates to an experience that doesn't align with the user mental model. So while two-way data-binding in Angular can successfully address in more manageable applications the MVC pattern concern of providing a responsive and accurate experience for the user, Angular coincidentally falters as the project grows in that particular issue it works well with in more manageable projects. `
-        },
-        {
-            contentType: "Text",
-            content: `Another shortcoming of bidirectional data-binding in general, which in hindsight I can now apply to understand some of my previous frustrations with Angular, is the issue of managing shared state between models. Models that hold data and state can and will often be stored on $scope; which itself is an object that holds the watched variables to effect the bidirectional data-binding in Angular. Each new controller in Angular essentially initializes a new $scope object to add to the $scope tree structure that reaches all the way up to $rootScope. There will very likely come a time as your application grows when data or state in one $scope object is needed by another $scope object: essentially,  one model becomes dependent on another model. But as your application continues to grow, that important data stored in one $scope object isn't needed by just another $scope object, but maybe three, or four others. Connecting how the state gets from here to there to there and so on will undoubtedly become a frustrating mess, and before you know it, your application will have matured into one without a real single source of truth, thereby resulting in the likelihood of having an unstable application state. Oh, my. And just yesterday your baby was so manageable. You still love it, but. But.`
-        },
-        {
-            contentType: "Text",
-            content: `Come React to address some of the issues of two-way data-binding with its encouragement of a one-way data flow. While React itself is just a view framework for your application, the Flux and Redux architectures are where the unidirectional data flow originate from. The Redux architecture, which I will primarily focus on going forward and will introduce right now, implements a unidirectional data flow by, first, storing all of the application state in one place, the store. Data flows down from the store into a specific type of React component called a container component. Components, by the way, are the building blocks that the views and user interfaces are built with. The container components then trickle down the data appropriately to its children presentation components that need it. When a user interacts with the application,  it will be through a user interface on a component. This will trigger the dispatch of an action, which is essentially an object with at least the crucial property of type. The value for the type property will be a string representing what type of event triggered the dispatch of the action. The action can as well have additional properties that store data that is used to, for example, add or update the application state. The action, along with the current state, will be inputted to all of the reducers, which are pure functions: pure functions produce no side-effects nor are they dependent on some sort of external state, so they will always return the same output given the same input. A reducer will check the type of each action, and if it doesn't match, it will return the the state untouched; otherwise, if the action type does match, the reducer will do its business with the state and any data attached to the action, and return an updated state. An important thing to understand, though, is that the state that is returned by the reducer isn't a mutation of the state that is inputted to it; a copy of the inputted state is made in the reducer, which is revised upon according to the action, and returned. The store is then updated with the new state, which lastly flows down to the container components and to their appropriate children presentation components to update the view.`
-        },
-        {
-            contentType: "Text",
-            content: `This Redux data-flow is strictly unidirectional, and being so, it can address some of the shortcomings of the bidirectional data-binding in Angular. While bidirectional data-binding in Angular essentially subscribes to changes on the view and model to update each other accordingly, which can cause potential issues in performance and with state management as the application grows, state updates in Redux are made in one place, which then trickle down to the components that need the updates. This structure assures that the entire state of the application exists at a single source of truth, which is the Redux store. This means that the potential complication of models being dependent on other models for state in Angular are non-existent in a Redux application. In addition, any potential performance hindrances caused by Angular's dirty checking are, as well, non-existent. `
-        },
-        {
-            contentType: "Text",
-            content: `The store in Redux is also immutable, so this trait paired with the unidirectional data flow makes understanding your application and debugging it simpler than in a bidirectional data-binding application like in Angular. As it was mentioned earlier, bidirectional data-binding could lead to a mess of shared state between models; issues could sprout where mutating shared state in one part of the application could lead to unintentional impacts in another part of the application. In Redux, any intention to change the state goes through a reducer, and only the appropriate reducer will output the new state based on the action type. As a result, there is a clear understanding of how data moves through the entire application, and the unidirectional data flow makes it simple to trace where what is happening where so that the debugging can be quickly isolated. The immutable aspect of the store adds to the ease and clarity because it assures that any updates to the state are ultimately happening in a reducer; Which, again, accepts the current state and action, and if the action type matches, outputs an updated copy of the inputted state. `
-        },
-        {
-            contentType: "Text",
-            content: `All of this unidirectional data flow that is encouraged in React and implemented by Redux translates to quick, accurate, and efficient responses to  user actions and data changes. View updates are calculated and performed as efficiently as possible in React, so what you get with React and Redux is a front-end that scales better, has a clearer and more understandable data flow, is easier to debug, and ___ than Angular and its use of bidirectional data-binding. React paired with Redux is also, in my opinion, much more enjoyable to write because of its  with functional programming. That's what I meant some time ago when I first converted an Angular front-end to a React and Redux front-end. That's turning on the light. Thank you if you reached the end of this lengthy post. And if you spotted any inaccuracies in my interpretations and understandings, I encourage you, reader, to correct me down below. Until I switch on another light, enjoy a beer or four. Cheers.`
+            content: `So, that's what I meant some time ago when I first converted an Angular front-end to a React and Redux front-end. That's turning on the light. Thank you if you reached the end of this lengthy post. And if you spotted any inaccuracies in my interpretations and understandings, I encourage you, reader, to correct me down below. Until I switch on another light, enjoy a beer or four. Cheers.`
         }
+
     ],
-    url: "turning-on-light-data-binding-vs-data-flow"
+    url: "turning-on-light-data-binding-vs-data-flow",
+    photoHeader: "/images/bulbForTurningOnLightPiece.jpg"
 };
 
 module.exports = [firstEssay, secondEssay, thirdEssay, fourthEssay, fifthEssay, sixthEssay];
