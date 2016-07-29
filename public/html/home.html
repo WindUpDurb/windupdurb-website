@@ -11,10 +11,10 @@
 <div class="container">
     <div style="margin-top: 10px;" class="row">
         <div ng-if="!firstPage" class="pull-left">
-            <button type="button" ng-click="{{leafThroughPages('next')}}" class="btn btn-warning">Newer Posts</button>
+            <button type="button" ng-click="previousPage()" class="btn btn-warning">Newer Posts</button>
         </div>
         <div ng-if="!lastPage" class="pull-right">
-            <button class="btn btn-warning">Older Posts</button>
+            <button ng-click="nextPage()" class="btn btn-warning">Older Posts</button>
         </div>
     </div>
 </div>

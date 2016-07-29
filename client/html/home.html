@@ -11,10 +11,10 @@
 <div class="container">
     <div style="margin-top: 10px;" class="row">
         <div ng-if="!firstPage" class="pull-left">
-            <button type="button" ng-click="{{leafThroughPages('next')}}" class="btn btn-warning">Newer Posts</button>
+            <button type="button" ng-click="previousPage()" class="btn btn-warning">Newer Posts</button>
         </div>
         <div ng-if="!lastPage" class="pull-right">
-            <button class="btn btn-warning">Older Posts</button>
+            <button ng-click="nextPage()" class="btn btn-warning">Older Posts</button>
         </div>
     </div>
 </div>
@@ -42,7 +42,6 @@
             <div class="col-xs-6 col-xs-offset-4 col-sm-3 col-sm-offset-5">
                 <button type="button" ui-sref="writtenPiece({pieceId: '{{essay.url}}' })" style="margin-bottom: 10px; background-color: #FF5722" class="btn btn-primary btn-raised">Read</button>
             </div>
-
         </div>
         <div style="margin-top: 50px; margin-bottom: 25px"  class="row">
             <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 blockDivider"></div>
