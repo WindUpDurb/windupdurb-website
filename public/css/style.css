@@ -131,6 +131,14 @@ body {
   margin-bottom: 10px;
   max-width: 60%; }
 
+#parallaxHomeXS {
+  background-image: url("/images/thumbUpXS.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 #parallaxHome {
   background-image: url("/images/thumbUpCompressed.jpg");
   height: 700px;
@@ -144,6 +152,14 @@ body {
   height: 700px;
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#parallaxAboutXS {
+  background-image: url("/images/onWhyIWriteXS.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center right;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -179,6 +195,10 @@ a:focus {
 
 .whiteText {
   color: #EEEEEE; }
+
+.firstPageImageXS {
+  max-width: 300px;
+  max-height: 650px; }
 
 #directoryContainer {
   background-color: #EEEEEE;
