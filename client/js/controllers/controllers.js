@@ -7,7 +7,7 @@ app.controller("mainController", function ($scope, EssayServices, $state) {
 });
 
 app.controller("essaysController", function ($scope, EssayServices, $state, $sce) {
-    let pages = [];
+   /* let pages = [];
 
     const producePages = function () {
         if ($scope.olderPosts && pages.length) {
@@ -26,12 +26,13 @@ app.controller("essaysController", function ($scope, EssayServices, $state, $sce
             $scope.olderPosts = true;
             producePages();
         }
-    };
+    };*/
 
     EssayServices.getAllEssays()
         .then(function (response) {
-            pages = EssayServices.sortPages(response.data);
-            $scope.toggleOlderPosts(true);
+            $scope.pages = EssayServices.sortPages(response.data).slice(1);
+            $scope.firstPage = response.data[0];
+            console.log("Check: ", $scope.pages);
         })
         .catch(function (error) {
             console.log("Error: ", error);

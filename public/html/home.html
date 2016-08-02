@@ -1,14 +1,39 @@
-<div class="homeHeaderContainer container-fluid">
-    <div class="homeheader container">
-        <img class="winduphomeheader" src="images/windup-key.png">
-        <h1 class="windupdurbheading">Wind-UpDurb</h1>
-        <h2 class="homemeditationsheading">Meditations on Javascript, Web Development, and Life</h2>
-        <a class="pull-right" href="https://twitter.com/WindUpDurb" target="_blank"><i style="color: #00aced" class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-        <a style="margin-right: 15px; margin-top: 4px;" class="githubMark pull-right" ng-href="https://github.com/WindUpDurb" target="_blank"><img src="/GitHub-Mark/PNG/GitHub-Mark-32px.png"></a>
+
+<div id="parallaxHome">
+    <div class="navbarMine">
+        <div class="container-fluid navbarInnerContainer">
+            <div class="col-sm-4"><span>Wind-UpDurb</span></div>
+            <a class="col-sm-1 col-sm-offset-6" ui-sref="home">Home</a>
+            <a class="col-sm-1" ui-sref="about">About</a>
+        </div>
+    </div>
+
+    <div id="homeCard" class="container text-center">
+        <div class="row">
+            <div class="col-sm-4 well">
+                <img id="myImage" src="https://lh6.googleusercontent.com/-QO1uRDREI40/AAAAAAAAAAI/AAAAAAAABnE/PfocMJ-4YTI/photo.jpg" class="img-circle">
+                <br>
+                <div class="cardMainTextDiv">
+                    <span class="cardtextMain">Find here my meditations</span>
+                    <br>
+                    <span class="cardtextMain">On Javascript, Web Development, and Life</span>
+                </div>
+                <div class="cardNameDiv">
+                    <span class="cardtextMain">-David</span>
+                </div>
+                <div class="row cardMainTextDiv">
+                        <a id="twitterIcon" href="https://twitter.com/WindUpDurb" target="_blank"><i style="color: #00aced" class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+
+                    <a style="margin-right: 15px; margin-top: 4px;" class="githubMark" ng-href="https://github.com/WindUpDurb" target="_blank"><i class="fa fa-3x fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="container">
+
+
+<!--<div class="container">
     <div style="margin-top: 10px;" class="row">
         <div ng-if="olderPosts" class="pull-left">
             <button type="button" ng-click="toggleOlderPosts(olderPosts)" class="btn btn-warning">Newer Posts</button>
@@ -17,9 +42,77 @@
             <button ng-click="toggleOlderPosts(olderPosts)" class="btn btn-warning">Older Posts</button>
         </div>
     </div>
+</div>-->
+
+
+<div class="firstPageContainer container">
+    <div class="row well">
+        <div class="text-center col-xs-4">
+            <img class="img-responsive firstPageImage" ng-src={{firstPage.photoHeader}}>
+        </div>
+        <div class="col-xs-8 firstPageDetailDiv">
+            <span class="firstPageTitle"><a ng-href="/#!/writing/{{firstPage.url}}">{{firstPage.title}}</a></span>
+            <br><span class="firstPageIntro">{{firstPage.introduction}}</span>
+            <br><br><br>
+            <span class="firstPageDate">{{firstPage.datePosted}}</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="well col-xs-4">
+            <img  ng-src={{pages[0].photoHeader}}>
+            <br>
+            <br>
+            <span class="PageTitle"><a ng-href="/#!/writing/{{pages[0].url}}">{{pages[0].title}}</a></span>
+            <br><span class="PageIntro">{{pages[0].introduction}}</span>
+            <br><br><br><br><br>
+            <span class="PageDate">{{pages[0].datePosted}}</span>
+        </div>
+        <div class="well col-xs-4">
+            <img  ng-src={{pages[1].photoHeader}}>
+            <br>
+            <br>
+            <span class="PageTitle"><a ng-href="/#!/writing/{{pages[1].url}}">{{pages[1].title}}</a></span>
+            <br><span class="PageIntro">{{pages[1].introduction}}</span>
+            <br><br><br><br><br><br><br>
+            <span class="PageDate">{{pages[1].datePosted}}</span>
+        </div>
+        <div class="well col-xs-4">
+            <img ng-src={{pages[2].photoHeader}}>
+            <br>
+            <br>
+            <span class="PageTitle"><a ng-href="/#!/writing/{{pages[2].url}}">{{pages[2].title}}</a></span>
+            <br><span class="PageIntro">{{pages[2].introduction}}</span>
+            <br><br><br>
+            <span class="PageDate">{{pages[2].datePosted}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="well col-xs-4">
+            <img  ng-src={{pages[3].photoHeader}}>
+            <br>
+            <br>
+            <span class="PageTitle"><a ng-href="/#!/writing/{{pages[3].url}}">{{pages[3].title}}</a></span>
+            <br><span class="PageIntro">{{pages[3].introduction}}</span>
+            <br><br><br>
+            <span class="PageDate">{{pages[3].datePosted}}</span>
+        </div>
+        <div class="well col-xs-4">
+            <img  ng-src={{pages[4].photoHeader}}>
+            <br>
+            <br>
+            <span class="PageTitle"><a ng-href="/#!/writing/{{pages[4].url}}">{{pages[4].title}}</a></span>
+            <br><span class="PageIntro">{{pages[4].introduction}}</span>
+            <br><br><br><br>
+            <span class="PageDate">{{pages[4].datePosted}}</span>
+        </div>
+    </div>
 </div>
 
-<div ng-repeat="essay in currentPages" class="container writingblock">
+
+
+<!--
+<div ng-repeat="essay in currentPages" class="writingblock">
     <div class="writingblockinnercontainer">
         <div style="margin-top: 45px;" class="row">
             <div class="col-xs-6 col-sm-2 col-sm-offset-2">
@@ -48,3 +141,4 @@
         </div>
     </div>
 </div>
+-->

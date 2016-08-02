@@ -136,7 +136,9 @@ let firstEssay = {
             content: `And with that, I push you, reader, to break out of your comfort zone and be a noob again in anything and everything for no other reason than to simply learn.`
         }
     ],
-    url: "var-versus-let-a-discussion-on-being-a-noob"
+    url: "var-versus-let-a-discussion-on-being-a-noob",
+    photoHeader: "/images/letVsVarPhotoHeader.jpg"
+
 };
 
 
@@ -651,7 +653,9 @@ let secondEssay = {
         }
 
     ],
-    url: "deploying-to-ec2-and-shotgunning-beer"
+    url: "deploying-to-ec2-and-shotgunning-beer",
+    photoHeader: "/images/shotgunBeerPhotoHeader.jpg"
+
 };
 
 
@@ -756,7 +760,9 @@ let secondEssay = {
  content: `And now, after this brief introduction on the prototype-based inheritance in Javascript, I part ways with you. May your coding ventures be accompanied by bounties of beer. Cheers. `
  }
  ],
- url: "class-with-your-beer-intro-to-prototype-based-inheritance"
+ url: "class-with-your-beer-intro-to-prototype-based-inheritance",
+     photoHeader: "/images/classWithBeerHeader.jpg"
+
  };
 
 
@@ -866,7 +872,9 @@ let secondEssay = {
 
  }
  ],
- url: "beer-me-please-an-intro-to-big-o"
+ url: "beer-me-please-an-intro-to-big-o",
+     photoHeader: "/images/bigOHeader.jpg"
+
  };
 
 
@@ -1000,7 +1008,9 @@ let fifthEssay = {
 
         }
     ],
-    url: "this-beer-an-intro-to-this-in-javascript"
+    url: "this-beer-an-intro-to-this-in-javascript",
+    photoHeader: "/images/thisKeywordHeader.jpg"
+
 };
 
 
@@ -1012,7 +1022,7 @@ let sixthEssay = {
     essayNumber: "06",
     title: "Turning On The Light: An Exploration of Bidirectional Data-Binding and Unidirectional Data Flow",
     introduction:  "The best way to understand something you don't know is by tackling it head on and dissecting it. Read about how I became more intimate with React, Angular, and software development in general.",
-    datePosted: "July 28, 2016",
+    datePosted: "July 29, 2016",
     textBody: [
         {
             contentType: "Text",

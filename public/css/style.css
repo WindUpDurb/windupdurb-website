@@ -56,11 +56,11 @@ body {
   font-family: "Fjalla One", sans-serif; }
 
 #parallaxContainer {
-  height: 500px;
+  height: 700px;
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: auto; }
+  background-size: cover; }
 
 .navbarInnerContainer {
   font-size: 1.45em; }
@@ -68,8 +68,57 @@ body {
 .navbarMine {
   height: 5%; }
 
+.firstPageImage {
+  max-width: 350px;
+  max-height: 350px; }
+
+.firstPageContainer {
+  padding-top: 5%; }
+
+.firstPageDetailDiv {
+  padding-top: 3%; }
+
+.firstPageTitle {
+  font-size: 1.95em; }
+
+.firstPageDate {
+  font-size: 1.25em; }
+
+.firstPageIntro {
+  font-size: 1.5em; }
+
+.PageTitle {
+  font-size: 1.65em; }
+
+.PageDate {
+  font-size: 1.05em; }
+
+.PageIntro {
+  font-size: 1.25em; }
+
 .essayText {
   font-size: 1.35em; }
+
+.cardNameDiv {
+  padding-top: 15px; }
+
+.universalFont {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+
+#homeCard {
+  padding-top: 14%; }
+
+#myImage {
+  max-height: 175px;
+  max-width: 175px; }
+
+.cardMainTextDiv {
+  padding-top: 10px; }
+
+.cardtextMain {
+  font-size: 1.25em;
+  line-height: 1.5; }
 
 #aboutHeart {
   display: inline; }
@@ -81,6 +130,22 @@ body {
   margin-top: 5px;
   margin-bottom: 10px;
   max-width: 60%; }
+
+#parallaxHome {
+  background-image: url("/images/thumbUpCompressed.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#parallaxAbout {
+  background-image: url("/images/onWhyIWrite.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .sectionHeaderDiv {
   margin-top: 24px;
@@ -111,6 +176,9 @@ a:focus {
   display: inline-block;
   color: black;
   text-align: left; }
+
+.whiteText {
+  color: #EEEEEE; }
 
 #directoryContainer {
   background-color: #EEEEEE;
