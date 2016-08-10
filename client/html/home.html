@@ -77,11 +77,11 @@
 
 <div class="firstPageContainer container">
     <!--Larger Devices-->
-    <div class="hidden-xs row well">
-        <div class="text-center col-sm-4">
+    <div class="hidden-xs row cardEffect rowDivSM">
+        <div class="text-center paddingImage col-sm-6 col-lg-4">
             <img class="img-responsive firstPageImage" ng-src={{firstPage.photoHeader}}>
         </div>
-        <div class="hidden-xs col-sm-8 firstPageDetailDiv">
+        <div class="hidden-xs col-sm-6 col-lg-8 firstPageDetailDiv">
             <span class="firstPageTitle"><a ng-href="/#!/writing/{{firstPage.url}}">{{firstPage.title}}</a></span>
             <br><span class="firstPageIntro">{{firstPage.introduction}}</span>
             <br><br><br>
@@ -89,9 +89,11 @@
         </div>
     </div>
 
-    <div class="hidden-xs row">
-        <div class="well col-sm-4">
-            <img  ng-src={{pages[0].photoHeader}}>
+    <div class="hidden-xs row rowDivSM">
+        <div class="cardEffect col-sm-6 col-lg-4">
+            <div class="paddingImage">
+                <img ng-src={{pages[0].photoHeader}}>
+            </div>
             <br>
             <br>
             <span class="PageTitle"><a ng-href="/#!/writing/{{pages[0].url}}">{{pages[0].title}}</a></span>
@@ -99,8 +101,10 @@
             <br><br><br><br><br>
             <span class="PageDate">{{pages[0].datePosted}}</span>
         </div>
-        <div class="well col-sm-4">
-            <img  ng-src={{pages[1].photoHeader}}>
+        <div class="cardEffect col-sm-6 col-lg-4">
+            <div class="paddingImage">
+                <img  ng-src={{pages[1].photoHeader}}>
+            </div>
             <br>
             <br>
             <span class="PageTitle"><a ng-href="/#!/writing/{{pages[1].url}}">{{pages[1].title}}</a></span>
@@ -108,8 +112,10 @@
             <br><br><br><br><br><br><br>
             <span class="PageDate">{{pages[1].datePosted}}</span>
         </div>
-        <div class="well col-sm-4">
-            <img ng-src={{pages[2].photoHeader}}>
+        <div class="cardEffect col-sm-6 col-lg-4">
+            <div class="paddingImage">
+                <img ng-src={{pages[2].photoHeader}}>
+            </div>
             <br>
             <br>
             <span class="PageTitle"><a ng-href="/#!/writing/{{pages[2].url}}">{{pages[2].title}}</a></span>
@@ -118,9 +124,11 @@
             <span class="PageDate">{{pages[2].datePosted}}</span>
         </div>
     </div>
-    <div class="hidden-xs row">
-        <div class="well col-sm-4">
-            <img  ng-src={{pages[3].photoHeader}}>
+    <div class="hidden-xs row rowDivSM">
+        <div class="cardEffect col-sm-6 col-lg-4">
+            <div class="paddingImage">
+                <img  ng-src={{pages[3].photoHeader}}>
+            </div>
             <br>
             <br>
             <span class="PageTitle"><a ng-href="/#!/writing/{{pages[3].url}}">{{pages[3].title}}</a></span>
@@ -128,8 +136,10 @@
             <br><br><br>
             <span class="PageDate">{{pages[3].datePosted}}</span>
         </div>
-        <div class="well col-sm-4">
-            <img  ng-src={{pages[4].photoHeader}}>
+        <div class="cardEffect col-sm-6 col-lg-4">
+            <div class="paddingImage">
+                <img  ng-src={{pages[4].photoHeader}}>
+            </div>
             <br>
             <br>
             <span class="PageTitle"><a ng-href="/#!/writing/{{pages[4].url}}">{{pages[4].title}}</a></span>
@@ -141,9 +151,9 @@
 
     <!--Mobile Devices-->
     <div class="visible-xs row well">
-        <div class="col-xs-10 firstPageDetailDiv">
+        <div class="col-xs-9 col-xs-offset-1 firstPageDetailDiv">
             <div class="text-center">
-                <img class="firstPageImageXS" ng-src={{firstPage.photoHeader}}>
+                <img class="img-responsive" ng-src={{firstPage.photoHeader}}>
             </div>
             <br>
             <span class="firstPageTitle"><a ng-href="/#!/writing/{{firstPage.url}}">{{firstPage.title}}</a></span>
@@ -154,9 +164,9 @@
     </div>
 
     <div class="visible-xs row well">
-        <div class="col-xs-10 firstPageDetailDiv">
+        <div class="col-xs-9 col-xs-offset-1 firstPageDetailDiv">
             <div class="text-center">
-                <img class="firstPageImageXS" ng-src={{pages[0].photoHeader}}>
+                <img class="img-responsive" ng-src={{pages[0].photoHeader}}>
             </div>
             <br>
             <span class="firstPageTitle"><a ng-href="/#!/writing/{{pages[0].url}}">{{pages[0].title}}</a></span>
@@ -167,9 +177,9 @@
     </div>
 
     <div class="visible-xs row well">
-        <div class="col-xs-10 firstPageDetailDiv">
+        <div class="col-xs-9 col-xs-offset-1 firstPageDetailDiv">
             <div class="text-center">
-                <img class="firstPageImageXS" ng-src={{pages[1].photoHeader}}>
+                <img class="img-responsive" ng-src={{pages[1].photoHeader}}>
             </div>
             <br>
             <span class="firstPageTitle"><a ng-href="/#!/writing/{{pages[1].url}}">{{pages[1].title}}</a></span>
@@ -180,9 +190,9 @@
     </div>
 
     <div class="visible-xs row well">
-        <div class="col-xs-10 firstPageDetailDiv">
+        <div class="col-xs-9 col-xs-offset-1 firstPageDetailDiv">
             <div class="text-center">
-                <img class="firstPageImageXS" ng-src={{pages[2].photoHeader}}>
+                <img class="img-responsive" ng-src={{pages[2].photoHeader}}>
             </div>
             <br>
             <span class="firstPageTitle"><a ng-href="/#!/writing/{{pages[2].url}}">{{pages[2].title}}</a></span>
@@ -193,9 +203,9 @@
     </div>
 
     <div class="visible-xs row well">
-        <div class="col-xs-10 firstPageDetailDiv">
+        <div class="col-xs-9 col-xs-offset-1 firstPageDetailDiv">
             <div class="text-center">
-                <img class="firstPageImageXS" ng-src={{pages[3].photoHeader}}>
+                <img class="img-responsive" ng-src={{pages[3].photoHeader}}>
             </div>
             <br>
             <span class="firstPageTitle"><a ng-href="/#!/writing/{{pages[3].url}}">{{pages[3].title}}</a></span>
@@ -205,10 +215,10 @@
         </div>
     </div>
 
-    <div class="visible-xs ow well">
-        <div class="col-xs-10 firstPageDetailDiv">
+    <div class="visible-xs row well">
+        <div class="col-xs-9 col-xs-offset-1 firstPageDetailDiv">
             <div class="text-center">
-                <img class="firstPageImageXS" ng-src={{pages[4].photoHeader}}>
+                <img class="img-responsive" ng-src={{pages[4].photoHeader}}>
             </div>
             <br>
             <span class="firstPageTitle"><a ng-href="/#!/writing/{{pages[4].url}}">{{pages[4].title}}</a></span>
