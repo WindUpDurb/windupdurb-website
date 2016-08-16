@@ -1130,4 +1130,252 @@ let sixthEssay = {
     photoHeader: "/images/bulbForTurningOnLightPiece.jpg"
 };
 
-module.exports = [firstEssay, secondEssay, thirdEssay, fourthEssay, fifthEssay, sixthEssay];
+////////////////////////////////End of Sixth
+
+let seventhEssay = {
+    essayNumber: "07",
+    title: "That Drink Brewed From Malted Barley: An Introduction to Using Abstraction in Your Javascript",
+    introduction:  "Abstraction is what allows me to refer to beer without the need of having to understand the complexity of that drink brewed from malted barley. Read about how abstraction applies to Javascript.",
+    datePosted: "August 16, 2016",
+    textBody: [
+
+        {
+            contentType: "Text",
+            content:`It’s important to be self-aware, both as a developer and as a human being. It helps you better understand yourself so that you can effectively change and grow. And in an industry that doesn’t stay still for long, it is vital to continue growing alongside the restless beast as it perpetually evolves. `
+        },
+        {
+            contentType: "Text",
+            content:`I’ve noticed in my own code a shift towards a functional style of programming that is leaps and bounds more maintainable and readable than my early imperative style of coding. While the imperative style that is characteristic of my early Javascript days did help me understand the language, it really served as a sort of training wheels that I would ultimately ditch once as I was able to code with confidence and self-awareness.`
+        },
+        {
+            contentType: "Text",
+            content:`As I look back to those earlier days, I’ve also noticed a lack of abstraction in my imperative code. It was just something that I wasn’t familiar with during those times when I wrote my code in a sequence of instructions.`
+        },
+        {
+            contentType: "Text",
+            content:`But abstraction is an incredibly important technique in computer science. It can even be argued that we wouldn’t be at this point in technological progress, nor would we be able to advance further, without abstraction.`
+        },
+        {
+            contentType: "Text",
+            content:`So what follows are demonstrations of how abstraction can be applied to your own Javascript, as well as how functional composition can be created, which I’ve come to understand as the product of combining abstractions in a functional style of programming.  `
+        },
+        {
+            contentType: "SectionHeader",
+            content: "Abstraction"
+        },
+        {
+            contentType: "Text",
+            content:`I understand abstraction in computer science as taking complexity and generalizing it, which thereby simplifies it. Abstraction outside of computer science is knowing what beer is without having to know what beer <i> really </i> is: which is a beverage brewed from malted barley, some hops, and some yeast, among other ingredients for individuality and character. Beer serves as an abstraction for this beverage, so we can better interact with and understand beer without having to really interact with and understand all the complexity that makes beer. `
+        },
+        {
+            contentType: "Text",
+            content:`It is through combining abstractions that we can understand composition. Abstractions can be composed into further abstractions, so that we can understand what a six pack is without also having to concentrate on what a six pack <i> really </i> is: six glass bottles that each hold 12 ounces of a beverage brewed from malted barley, hops, yeast, and other ingredients, which are held in the six pockets of a cardboard holder. And this is a pretty shallow analysis of the abstraction levels of a six pack. It can be taken deeper into the cardboard holder, the glass bottles, and etcetera. But what I’d like to reiterate is that composition is combining abstractions and layering them to create further abstractions, which make life, and coding, more manageable. `
+        },
+        {
+            contentType: "Text",
+            content:`As we will see shortly, abstraction and functional composition in Javascript, or at least in this functional style of Javascript that I am exploring, really refers to functions. Functions can be created to act as abstractions for complex instructions and processes, and combining them through functional composition ultimately can help in creating more maintainable and readable code.`
+        },
+        {
+            contentType: "Text",
+            content:`But first let’s look at a more imperative style of writing Javascript, which is characteristic of my early code, and see how I used to figure out how many beers I would have in my fridge at any given time. `
+        },
+        {
+            contentType: "SectionHeader",
+            content: "An Imperative Style of Programming"
+        },
+        {
+            contentType: "Text",
+            content:`Right now, let’s say that I have two six packs of Fat Tire and Budweiser that each contain six empty beer bottles. Those six packs are done, but they’re still in my fridge until I finish every six pack and empty everything altogether. I have an additional three six packs in the fridge: Alley Cat Amber Ale has three unopened beers, Anchor Steam has four unopened beers, and Sculpin has one unopened beer. All of this data is represented below in an array of six objects with properties for beer and brewery, and a beers property that has a value of an array with items of either true or false,  depending on whether or not the beer is unopened or consumed.`
+        },
+        {
+            contentType: "Image",
+            content: `06-00-images.png`
+
+        },
+        {
+            contentType: "Text",
+            content:`If I wanted to figure out which six packs still had unopened beers, I would have maybe looped through each six pack and checked them:`
+        },
+        {
+            contentType: "Image",
+            content: `06-01-images.png`
+
+        },
+        {
+            contentType: "Text",
+            content:`I would declare an empty array called sixPacksWithBeers to hold any six pack objects that would have unopened beers. Then I would follow that declaration with a for loop cycling through every six pack in the sixPacksInFridge array. I would then nest another for loop to cycle through each beers array, only pushing the six pack object into the sixPacksWithBeers array if there is at least one unopened beer in it. With a concluding log to the console, I would know which six packs had unopened beers.`
+        },
+        {
+            contentType: "Text",
+            content:`But then I might want to know how many unopened beers remained altogether. I might add some more code in this little program to just count the beers in the objects in the sixPacksWithBeers array:`
+        },
+        {
+            contentType: "Image",
+            content: `06-02-images.png`
+
+        },
+        {
+            contentType: "Text",
+            content:`I would declare another variable named totalBeersLeft with an initial value of  0. I would then loop through the sixPackWithBeers array, nest another loop within it to cycle through the beers property in the six pack objects, and then increase the totalBeersLeft variable by 1 if I find a beer. Lastly, I would log to the console how many beers I had left altogether.`
+        },
+        {
+            contentType: "Text",
+            content:`This entire program could be represented in the following file:`
+        },
+        {
+            contentType: "Image",
+            content: `06-03-images.png`
+
+        },
+        {
+            contentType: "SectionHeader",
+            content: "Concerns with the Imperative Style"
+        },
+        {
+            contentType: "Text",
+            content:`One of my main concerns with this program is that the nested for loops can be difficult to read. The variable names aren’t confusing or misleading, so they do provide some context as to what is happening, but all the code used to construct the nested for loops really muddles the context. Some might argue that the longer, more descriptive variable names sort of lose their clarity in the midst of the for loop code. `
+        },
+        {
+            contentType: "Text",
+            content:`The other main concerns I have with this program is that the imperative style it is written in mutates state and the quality of the code suffers from nearly no reusability. These concerns might not seem like much in such a simple program like this, but an imperative style of programming could cause issues in a more complex program: mutating state could affect unintended areas of your program, and the lack of reusable code will often lead to unnecessary repetition of code. This all translates to time wasted either debugging or repeating code.`
+        },
+        {
+            contentType: "Text",
+            content:`So while this program will get the job done, the imperative style it is written in ultimately detracts heavily from the quality of the code, and I especially can’t, without tweaking, take this program and use it in another program that, maybe, involved also counting the thirty packs, forties, tall cans, and mini-kegs in my fridge.`
+        },
+        {
+            contentType: "Text",
+            content:`What we can do, though, is refractor this code in a more functional style, keeping in mind the technique of abstraction.`
+        },
+        {
+            contentType: "SectionHeader",
+            content: "Abstracting the Complexity"
+        },
+        {
+            contentType: "Text",
+            content:`For this next example, I can create a function that abstracts the process of identifying which six pack objects contain unopened beers, much like I did in the first imperative example.`
+        },
+        {
+            contentType: "Image",
+            content: `06-04-images.png`
+
+        },
+        {
+            contentType: "Text",
+            content:`I declare a function called filterIrrelevantSixPacks that takes one argument, which is an array of six pack objects. I then return the results of calling the filter method on the array with a callback that searches through the beers property for a value of true.`
+        },
+        {
+            contentType: "Text",
+            content:`Let’s take it down a level and see what is being abstracted through this much more concise code.`
+        },
+        {
+            contentType: "Text",
+            content:`First, the filter method will be called on the input that this function receives. Filter is a method that is called on an array and returns a new array with the elements from the original array that pass the test implemented by the callback.  In this case, if the beers property in a six pack object includes at least one beer, the beer object will pass the test and it will be filtered into the new array. `
+        },
+        {
+            contentType: "Text",
+            content:`Let’s now take it a level deeper.`
+        },   {
+            contentType: "Text",
+            content:`What really is happening with the filter method is a loop through each item in an array. A callback is then applied to each item, and if it passes, the item is then pushed into a new array. In my function, I use the includes method for the test criterion. The includes method will also loop through an array to determine if the search element is found in it, returning true or false if it is found or not. `
+        },
+        {
+            contentType: "Text",
+            content:`You might have caught on by now, but this function is pretty similar to what is happening in my first nested loop example earlier. In both cases, there is an outer loop over the six pack array, and there is also an inner loop on the beers property within each six pack object. In both cases, the object is filtered into a new array if a beer is found to be unopened in the six pack. The obvious difference, though, is that the  filterIrrelevantSixPacks function is much, much more readable because the complex processes that is happening behind the scenes are abstracted into the methods filter and includes. `
+        },
+        {
+            contentType: "Text",
+            content:`Let’s look at the second function:`
+        },
+        {
+            contentType: "Image",
+            content: `06-05-images.png`
+
+        },
+        {
+            contentType: "Text",
+            content:`The countRemainingBeers function takes an array of six pack objects as input. Reduce is then called on the six pack array, which ultimately adds up the number of unopened beers in the beers property of each six pack object.`
+        },
+        {
+            contentType: "Text",
+            content:`Let’s again understand what is happening a level deeper.`
+        },
+        {
+            contentType: "Text",
+            content:`The reduce method is performed on arrays, and it applies a function to each item or value in the array to ultimately reduce the array into a single value. In this example, the function that aids the reduction is only concerned with the beers property of each six pack object. The function filters out only the unopened beers into a new array and calls the length method on it to calculate how many unopened beers are in the six pack, which is added to the number of beers in the subsequent six packs, ultimately returning the total number of beers in the array passed to the countRemainingBeers function. `
+        },
+        {
+            contentType: "Text",
+            content:`And now one more level deeper.`
+        },
+        {
+            contentType: "Text",
+            content:`The reduce method will begin an outer loop on each item in the array that is passed to the countRemainingBeers function. An inner loop is then performed on the beers property with the filter method. The value returned by the length method on this filtered array then serves as counter for the amount of unopened beers in each six pack, which is added to with each iteration of the reduce loop. Lastly, this number is returned, serving as the reduction of the entire array into a single value. `
+        },
+        {
+            contentType: "Text",
+            content:`This function, too, acts pretty similarly to the nested for loops in the second example earlier in the imperative style program. But this code, like the first example function, is much more readable and it is also reusable.`
+        },
+        {
+            contentType: "Text",
+            content:`Further, both of these functions adhere to some principles of functional programming. `
+        },
+        {
+            contentType: "SectionHeader",
+            content: "Some Principles of Functional Programming"
+        },
+        {
+            contentType: "Text",
+            content:`Both functions do not mutate state at all: they just accept input and produce output in a way that is characteristic of a pure function. First, pure functions produce no side effects, which is when a function somehow interacts with something outside of it, such as calling an external function or mutating state. Second, a pure function does not mutate the input that is passed to it, and it will always output a mapped value that corresponds with the input that is passed to it. This means that a pure function will always produce the same output given the same input. `
+        },
+        {
+            contentType: "Text",
+            content:`Another functional programming characteristic of this code is the use of higher-order functions. The filter and reduce methods are considered higher-order functions, which are functions that can either receive other functions as input or return functions as output. `
+        },
+        {
+            contentType: "Text",
+            content:`The obvious advantages of this functional style of code are readability and reusability. Each function can be read and understood, and each function can be copied into other programs because they don’t have any dependencies. In addition, this code will likely cause less problems down the line, as state does not get mutated. And if there ever was an issue, debugging is isolated to just revising a function, instead of having to tamper with state-mutating code and worrying about where else that code is connected to in your program. `
+        },
+        {
+            contentType: "Text",
+            content:`Lastly, I know these examples are not the most efficient ways of counting the beers in each object in the array. In fact, it is a bit redundant. What I aimed to demonstrate, though, are the techniques of abstraction and composition in computer science, so keep this in mind through this demonstration of functional composition. `
+        },
+        {
+            contentType: "SectionHeader",
+            content: "Functional Composition"
+        },
+        {
+            contentType: "Text",
+            content:`As I mentioned earlier, functional composition is combining functions into another function. This serves the purpose of further abstracting away from the complexity below, adding more readability and cleanliness in your program. `
+        },
+        {
+            contentType: "Text",
+            content:`So, let’s say that I didn’t want to call two functions in my program to obtain the total number of unopened beers in the six packs I have in my fridge. Besides easily refractoring the code to be more efficient, I could also combine the two functions that I created into another function like so:`
+        },
+        {
+            contentType: "Image",
+            content: `06-06-images.png`
+
+        },
+        {
+            contentType: "Text",
+            content:`This one-liner function is first accepting an array of six pack objects as input. This input is fed to the filterIrrelevantSixPacks function, and the output it returns is fed to the countRemainingBeers function. The output this last function returns is finally returned by the enclosing function. `
+        },
+        {
+            contentType: "Text",
+            content:`Taking it a level deeper, well, you can just re-read this entire post. This last function composition is abstraction on top of abstraction on top of abstraction and so on of the previous examples. `
+        },
+        {
+            contentType: "Text",
+            content:`What is to gain from function composition, though, is much better readability. The imperative program in the first examples has been condensed into a one-liner that is easily understood and also resuable. In addition,  the benefits of having code that does not mutate state and produces no side effects will preserved in the function composition. `
+        },
+        {
+            contentType: "Text",
+            content:`Keep abstraction and function composition in mind when you’re writing code next time. If not for your own code, but to understand the methods inherent in the language. Abstractions run deep in Javascript and programming. `
+        }
+    ],
+    url: "that-one-drink-abstraction-in-your-javascript",
+    photoHeader: "/images/dandelionCompressed.jpg"
+};
+
+module.exports = [firstEssay, secondEssay, thirdEssay, fourthEssay, fifthEssay, sixthEssay, seventhEssay];

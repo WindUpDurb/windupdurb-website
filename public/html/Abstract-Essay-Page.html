@@ -1,0 +1,111 @@
+
+
+<div ng-style="{'background-image': 'url(' + currentPiece.photoHeader + ')'}" id="parallaxContainer">
+    <div class="hidden-xs navbarMine">
+        <div class="container-fluid navbarInnerContainer">
+            <div class="whiteText col-sm-4"><span>Wind-UpDurb</span></div>
+            <a class="whiteText col-sm-1 col-sm-offset-6" ui-sref="home">Home</a>
+            <a class="whiteText col-sm-1" ui-sref="about">About</a>
+        </div>
+    </div>
+    <!--Mobile-->
+    <div class="visible-xs navbarMine">
+        <div class="text-center container-fluid navbarInnerContainer">
+            <div class="col-xs-12 whiteText"><span>Wind-UpDurb</span></div>
+            <a class="col-xs-12 whiteText" ui-sref="home">Home</a>
+            <a class="col-xs-12 whiteText" ui-sref="about">About</a>
+        </div>
+    </div>
+</div>
+<div style="margin-top: 100px" class="container">
+    <div style="margin-top: 50px" class="text-center">
+        <h2 id="essayTitle">{{currentPiece.title}}</h2>
+        <p><b>{{currentPiece.datePosted}}</b></p>
+        <br>
+        <div>
+            <p class="essayText">
+                It’s important to be self-aware, both as a developer and as a human being. It helps you better understand yourself so that you can effectively change and grow. And in an industry that doesn’t stay still for long, it is vital to continue growing alongside the restless beast as it perpetually evolves.
+            </p>
+            <p class="essayText">
+                I’ve noticed in my own code a shift towards a functional style of programming that is leaps and bounds more maintainable and readable than my early imperative style of coding. While the imperative style that is characteristic of my early Javascript days did help me understand the language, it really served as a sort of training wheels that I would ultimately ditch once as I was able to code with confidence and self-awareness.
+            </p>
+            <p class="essayText">
+                As I look back to those earlier days, I’ve also noticed a lack of abstraction in my imperative code. It was just something that I wasn’t familiar with at those times as I wrote my code in a sequence of instructions.
+            </p>
+            <p class="essayText">
+                But abstraction is an incredibly important technique in computer science. It can even be argued that we wouldn’t be at this point in technological progress, nor would we be able to advance further, without abstraction.
+            </p>
+            <p class="essayText">
+                So what follows are demonstrations of how abstraction can be applied to your own Javascript, as well as how functional composition can be created, which I’ve come to understand as the product of combining abstractions in functional style of programming.
+            </p>
+            <p class="essayText">
+                I understand abstraction in computer science as taking complexity and generalizing it, which thereby simplifies it. Abstraction outside of computer science is knowing what beer is without having to know what beer really is: which is a beverage brewed from malted barley, some hops, and some yeast, among other ingredients for individuality and character. Beer serves as an abstraction for this beverage, so we can better interact with and understand beer without having to really interact with and understand all the complexity that makes beer.
+            </p>
+            <p class="essayText">
+                It is through combining abstractions that we can understand composition. Abstractions can be composed into further abstractions, so that we can understand what a six pack is without also really having to concentrate on what it really is: six glass bottles that each hold 12 ounces of a beverage brewed from malted barley, hops, yeast, and other ingredients, which are held in the six pockets of a cardboard holder. And this is a pretty shallow analysis of the abstraction levels of a six pack. It can be taken deeper into the cardboard holder, the glass bottles, and etcetera. But what I’d like to reiterate is that composition is combining abstractions and layering them to create further abstractions, which make life, and coding, more manageable.
+            </p>
+            <p class="essayText">
+                As we will see shortly, abstraction and functional composition in Javascript, or at least in this functional style of Javascript that I am exploring, really refers to functions. Functions can be created to act as abstractions for complex instructions and processes, and combining them through functional composition ultimately can help in creating more maintainable and readable code.
+            </p>
+            <p class="essayText">
+                But first let’s look at a more imperative style of writing Javascript, which is characteristic of my early code, and see how I used to figure out how many beers I would have in my fridge at any given time.
+            </p>
+            <p class="essayText">
+                Right now, let’s say that I have two six packs of Fat Tire and Budweiser that each contain six empty beer bottles. Those six packs are done, but they’re still in my fridge until I finish every six pack and empty everything altogether. I have an additional three six packs in the fridge: Alley Cat Amber Ale has three unopened beers, Anchor Steam has four unopened beers, and Sculpin has one unopened beer. All of this data is represented below in an array of six objects with properties for beer and brewery, and a beers property that has a value of an array with items of either true or false,  depending on whether or not the beer is unopened or consumed.
+            </p>
+            <pre>
+                <code>
+            const sixPacksInFridge = [
+                        {
+                            sixPack: "Fat Tire",
+                            brewedBy: "New Belgium Brewing",
+                            beers: [false, false, false, false, false, false]
+                        },
+                        {
+                            sixPack: "Alley Cat Amber Ale",
+                            brewedBy: "Lost Coast Brewery",
+                            beers: [false, false, false, true, true, true]
+                        },
+                        {
+                            sixPack: "Anchor Steam",
+                            brewedBy: "Anchor Brewing Company",
+                            beers: [false, false, true, true, true, true]
+                        },
+                        {
+                            sixPack: "Sculpin",
+                            brewedBy: "Ballast Point Brewing Company",
+                            beers: [false, false, false, false, false, true]
+                        },
+                        {
+                            sixPack: "A six pack of good ol' Buds",
+                            brewedBy: "Anheuser-Busch",
+                            beers: [false, false, false, false, false, false]
+                        }
+                    ];
+                </code>
+            </pre>
+            <p class="essayText">
+
+            </p>
+            <p class="essayText">
+
+            </p>
+            <p class="essayText">
+
+            </p>
+            <p class="essayText">
+
+            </p>
+            <p class="essayText">
+
+            </p>
+            <p class="essayText">
+
+            </p>
+
+
+
+        </div>
+        <div style="margin-top: 20px" disqus=" currentPiece.url "></div>
+    </div>
+</div>

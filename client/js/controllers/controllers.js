@@ -31,7 +31,11 @@ app.controller("essaysController", function ($scope, EssayServices, $state, $sce
     EssayServices.getAllEssays()
         .then(function (response) {
             $scope.pages = EssayServices.sortPages(response.data);
+            console.log($scope.pages)
             $scope.firstPage = $scope.pages.shift();
+
+            console.log($scope.firstPage)
+
         })
         .catch(function (error) {
             console.log("Error: ", error);
